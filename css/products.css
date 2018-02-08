@@ -1,0 +1,182 @@
+
+    
+/*Start of modified sample stylesheet which gives padding to different sections
+/*Changed the padding for the header and the different sections to suit the look of my site */
+header {
+  padding: 154px 0 100px;
+}
+
+@media (min-width: 992px) {
+.masthead {
+    padding: 370px 0 270px;
+  }
+}
+
+/*width of header section*/
+@media (min-width: 992px) {
+  header {
+    padding: 120px 0 30px;
+  }
+  #header1 {
+    padding: 60px 0 30px;
+  }
+}
+ 
+ 
+ 
+ 
+ /*margin under header section*/
+section {
+  padding: 50px 0;
+}
+
+.container2{
+    
+   padding: 500px 0;
+  
+}
+
+/*End of modified sample stylesheet*/
+
+/*This changes the colour of the horizontal sections on homepage to a light grey colour*/
+.bg-primary{
+  background-color: #e0ebeb!important;
+ 
+}
+
+.bg-light{
+   background-color: #e0ebeb!important;
+  
+}
+
+
+/*!Learned how to change the height of the navbar here:
+https://stackoverflow.com/questions/37883498/how-to-change-navbar-bootstrap-height-and-make-the-text-keep-in-the-middle */
+
+#mainNav{
+    opacity: 0.85;  
+    background-color: #fff!important;
+    height: 90px;
+}
+
+
+/*! https://github.com/BlackrockDigital/startbootstrap-3-col-portfolio/blob/master/css/3-col-portfolio.css*/
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+#squares{
+    max-width: 800px;
+  
+}
+
+#squares2{
+    max-width: 550px;
+}
+
+/*! This is the cs code to make the picture links at the bottom of the homw page zoom on hover.
+Modified original code from this site:
+https://www.codeply.com/go/JuADMG3eTG/bootstrap-image-hover-css-zoom-scale
+zoom on hover*/
+.img-hover img {
+    -webkit-transition: all .3s ease; /* Safari and Chrome */
+  	-moz-transition: all .3s ease; /* Firefox */
+  	-o-transition: all .3s ease; /* IE 9 */
+  	-ms-transition: all .3s ease; /* Opera */
+  	transition: all .3s ease;
+  	position:relative;
+}
+
+
+.img-hover img:hover {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform:translateZ(0) scale(1.06); /* Safari and Chrome */
+    -moz-transform:scale(1.10); /* Firefox */
+    -ms-transform:scale(1.10); /* IE 9 */
+    -o-transform:translatZ(0) scale(1.10); /* Opera */
+    transform:translatZ(0) scale(1.10);
+}
+  
+
+  /*end of modified code for zoom on hover*/
+  
+.card-footer{
+background-color: #e0ebeb;
+    height: 100%;
+}
+/*style for cards in shop section*/
+.card {
+  height: 100%;
+}
+
+.card-text{
+     height: 100%;
+}
+
+h1{
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.2em;
+   
+}
+
+
+h5{
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.2em;
+   
+}
+.style{
+      font-size: 12px;
+    line-height: 14px;
+    color: #000;
+    padding: 12px 0 6px;
+    list-style: none;
+    font-family: LatoWeb,Lato,sans-serif;
+ 
+}
+
+
+
+
+
+
+.footer{
+    padding-left: 30%;
+    
+}
+
+
+.stylegallery{
+      font-size: 12px;
+    line-height: 14px;
+    color: #000;
+    padding: 500px 0 500px;
+    list-style: none;
+    font-family: LatoWeb,Lato,sans-serif;
+ 
+}
+.style.active, .style a:hover {
+  
+    color: #C1B497;
+}
+
+ /*centers bullet points in products section of website*/
+#bulletpoints{
+  
+  max-width: 500px;
+}
+
+/*changes size of text area under picture boxes in products*/
+#cardproducts{
+    
+    max-height: 60px!important;
+}
+
+
+
+
+
+

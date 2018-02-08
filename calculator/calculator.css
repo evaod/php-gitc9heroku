@@ -1,0 +1,85 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+
+/*Start of modified sample stylesheet which gives padding to different sections
+/*Changed the padding for the header and the different sections to suit the look of my site */
+header {
+  padding: 154px 0 100px;
+}
+
+@media (min-width: 992px) {
+  header {
+    padding: 100px 0 15px;
+  }
+}
+
+
+
+/*End of modified sample stylesheet*/
+
+/*This changes the colour of the horizontal sections on homepage to a light grey colour*/
+.bg-primary{
+  background-color: #e0ebeb!important;
+ 
+}
+
+.bg-light{
+   background-color: #e0ebeb!important;
+  
+}
+
+
+/*!Learned how to change the height of the navbar here:
+https://stackoverflow.com/questions/37883498/how-to-change-navbar-bootstrap-height-and-make-the-text-keep-in-the-middle */
+
+#mainNav{
+    opacity: 0.85;  
+    background-color: #fff!important;
+    height: 90px;
+}
+
+
+
+h1{
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.2em;
+   
+}
+h5{
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.2em;
+   
+}
+.style{
+      font-size: 12px;
+    line-height: 14px;
+    color: #000;
+    padding: 12px 0 6px;
+    list-style: none;
+    font-family: LatoWeb,Lato,sans-serif;
+ 
+}
+
+.style.active, .style a:hover {
+  
+    color: #C1B497;
+}
+
+
+/*Centres form on financing page
+Learned how to change position of my form here:
+https://stackoverflow.com/questions/20853066/how-to-center-form-in-bootstrap-3*/
+
+
+.center-div2{
+  
+  margin-left:25%;
+ 
+    width:75% /* value of your choice which suits your alignment */
+   
+}
