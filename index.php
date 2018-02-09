@@ -31,7 +31,7 @@
 
      <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
-     <link href="css/bootstrap.min.css" rel="stylesheet">
+     <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
     
          <!-- Custom styles for this template -->
     <link href="css/mapstyle.json" rel="stylesheet">
@@ -65,7 +65,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="indexweb.php">HOME</a>
+              <a class="nav-link js-scroll-trigger" href="index.php">HOME</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="sampledata/index.php">MAGENTO</a>
