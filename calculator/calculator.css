@@ -17,7 +17,6 @@ header {
 }
 
 
-
 /*End of modified sample stylesheet*/
 
 /*This changes the colour of the horizontal sections on homepage to a light grey colour*/
@@ -40,8 +39,6 @@ https://stackoverflow.com/questions/37883498/how-to-change-navbar-bootstrap-heig
     background-color: #fff!important;
     height: 90px;
 }
-
-
 
 h1{
     font-style: normal;
@@ -70,16 +67,18 @@ h5{
     color: #C1B497;
 }
 
-
-/*Centres form on financing page
-Learned how to change position of my form here:
-https://stackoverflow.com/questions/20853066/how-to-center-form-in-bootstrap-3*/
-
-
+/*adds padding to the left of the form */
 .center-div2{
-  
-  margin-left:25%;
- 
-    width:75% /* value of your choice which suits your alignment */
+    width:100%; /* value of your choice which suits your alignment */
+    padding-left: 30%;
    
+}
+  
+
+/*changes colour of textboxes to light blue*/
+input[type=text]{
+  background:#e0ebeb;
+}
+div.results{
+  background:#e0ebeb;
 }

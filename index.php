@@ -28,6 +28,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
+     <link href="css/bootstrap.min.css" rel="stylesheet">
     
          <!-- Custom styles for this template -->
     <link href="css/mapstyle.json" rel="stylesheet">
@@ -64,7 +65,7 @@
               <a class="nav-link js-scroll-trigger" href="#about">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="products.html">PRODUCTS & SERVICES</a>
+              <a class="nav-link js-scroll-trigger" href="sampledata/index.php">PRODUCTS & SERVICES</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="shop.php">ONLINE SHOP</a>

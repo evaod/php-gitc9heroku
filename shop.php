@@ -112,10 +112,17 @@
         <?php
         //session_start();
        
-    $host = "127.0.0.1";
-    $user = "evaod";                    //Your Cloud 9 username
-    $pass = "";                         //Remember, there is NO password by default!
-    $db = "sample_db";                  //Your database name you want to connect to
+       //devalopment db variables-to use on cloud9
+    #$host = "127.0.0.1";
+    #$user = "evaod";                    //Your Cloud 9 username
+    #$pass = "";                         //Remember, there is NO password by default!
+    #$db = "sample_db";                  //Your database name you want to connect to
+    
+    //Production variables -  To use on Heroku ClearDB
+    $host = "eu-cdbr-west-02.cleardb.net";
+    $user = "b110759b7e7766";                   
+    $pass = "b0ab1edf";                         
+    $db = "heroku_bb468c9befbbe02";                  
     
     // Create connection
             $conn = new mysqli($host, $user, $pass, $db);
@@ -134,7 +141,7 @@
             <div class="card-body">
               <h4 class="card-title">
                 <?php
-              $sql = "SELECT * FROM tblProducts WHERE product_id='2'";
+              $sql = "SELECT * FROM tblproducts WHERE product_id='2'";
               $result = $conn->query($sql);
           
               if ($result->num_rows > 0) {
@@ -151,7 +158,7 @@
               
               <p class="card-text">
               <?php
-              $sql = "SELECT * FROM tblProducts WHERE product_id='2'";
+              $sql = "SELECT * FROM tblproducts WHERE product_id='2'";
               $result = $conn->query($sql);
           
               if ($result->num_rows > 0) {
@@ -179,7 +186,7 @@
             <div class="card-body">
               <h4 class="card-title">
                 <?php
-              $sql = "SELECT * FROM tblProducts WHERE product_id='7'";
+              $sql = "SELECT * FROM tblproducts WHERE product_id='7'";
               $result = $conn->query($sql);
           
               if ($result->num_rows > 0) {
@@ -195,7 +202,7 @@
               </h4>
               <p class="card-text">
                 <?php
-              $sql = "SELECT * FROM tblProducts WHERE product_id='7'";
+              $sql = "SELECT * FROM tblproducts WHERE product_id='7'";
               $result = $conn->query($sql);
           
               if ($result->num_rows > 0) {
@@ -222,7 +229,7 @@
             <div class="card-body">
               <h4 class="card-title">
                 <?php
-              $sql = "SELECT * FROM tblProducts WHERE product_id='3'";
+              $sql = "SELECT * FROM tblproducts WHERE product_id='3'";
               $result = $conn->query($sql);
           
               if ($result->num_rows > 0) {
@@ -238,7 +245,7 @@
               </h4>
               <p class="card-text">
                 <?php
-              $sql = "SELECT * FROM tblProducts WHERE product_id='3'";
+              $sql = "SELECT * FROM tblproducts WHERE product_id='3'";
               $result = $conn->query($sql);
           
               if ($result->num_rows > 0) {
@@ -266,7 +273,7 @@
             <div class="card-body">
               <h4 class="card-title">
                 <?php
-              $sql = "SELECT * FROM tblProducts WHERE product_id='8'";
+              $sql = "SELECT * FROM tblproducts WHERE product_id='8'";
               $result = $conn->query($sql);
           
               if ($result->num_rows > 0) {
@@ -282,7 +289,7 @@
               </h4>
               <p class="card-text">
                 <?php
-              $sql = "SELECT * FROM tblProducts WHERE product_id='8'";
+              $sql = "SELECT * FROM tblproducts WHERE product_id='8'";
               $result = $conn->query($sql);
           
               if ($result->num_rows > 0) {
@@ -312,7 +319,7 @@
             <div class="card-body">
               <h4 class="card-title">
                 <?php
-              $sql = "SELECT * FROM tblProducts WHERE product_id='9'";
+              $sql = "SELECT * FROM tblproducts WHERE product_id='9'";
               $result = $conn->query($sql);
           
               if ($result->num_rows > 0) {
@@ -328,7 +335,7 @@
               </h4>
               <p class="card-text">
                 <?php
-              $sql = "SELECT * FROM tblProducts WHERE product_id='9'";
+              $sql = "SELECT * FROM tblproducts WHERE product_id='9'";
               $result = $conn->query($sql);
           
               if ($result->num_rows > 0) {
@@ -358,7 +365,7 @@
             <div class="card-body">
               <h4 class="card-title">
                 <?php
-              $sql = "SELECT * FROM tblProducts WHERE product_id='10'";
+              $sql = "SELECT * FROM tblproducts WHERE product_id='10'";
               $result = $conn->query($sql);
           
               if ($result->num_rows > 0) {
@@ -374,7 +381,7 @@
               </h4>
               <p class="card-text">
                 <?php
-              $sql = "SELECT * FROM tblProducts WHERE product_id='10'";
+              $sql = "SELECT * FROM tblproducts WHERE product_id='10'";
               $result = $conn->query($sql);
           
               if ($result->num_rows > 0) {
@@ -404,7 +411,7 @@
             <div class="card-body">
               <h4 class="card-title">
                 <?php
-              $sql = "SELECT * FROM tblProducts WHERE product_id='11'";
+              $sql = "SELECT * FROM tblproducts WHERE product_id='11'";
               $result = $conn->query($sql);
           
               if ($result->num_rows > 0) {
@@ -420,7 +427,7 @@
               </h4>
               <p class="card-text">
                 <?php
-              $sql = "SELECT * FROM tblProducts WHERE product_id='11'";
+              $sql = "SELECT * FROM tblproducts WHERE product_id='11'";
               $result = $conn->query($sql);
           
               if ($result->num_rows > 0) {
