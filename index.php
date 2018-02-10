@@ -83,7 +83,7 @@
               <a class="nav-link js-scroll-trigger" href="financing.html">FINANCING</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="contact.html">CONTACT</a>
+              <a class="nav-link js-scroll-trigger" href="contactsmptp.php">CONTACT</a>
             </li>
              <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="cart.php"><i class="fa fa-shopping-cart fa-lg"></i> CART</a> 

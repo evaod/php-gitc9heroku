@@ -62,8 +62,11 @@ Comments:	'.$_POST['comments'].'
    https://stackoverflow.com/questions/11488960/how-do-i-put-my-websites-logo-to-be-the-icon-image-in-browser-tabs -->
     <link rel="shortcut icon" type="image/x-icon" href="img/icon.ico" />
    
-    <!-- Bootstrap core CSS -->
+     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+    
  <link href='css/custom.css' rel='stylesheet' type='text/css'>
     
    <link href='css/products.css' rel='stylesheet' type='text/css'>
