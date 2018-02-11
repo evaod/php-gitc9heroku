@@ -32,18 +32,6 @@
      <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
      
-    
-         <!-- Custom styles for this template -->
-    <link href="css/mapstyle.json" rel="stylesheet">
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-
-    <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-      }
-    </style>
   </head>
  
  
@@ -68,9 +56,6 @@
               <a class="nav-link js-scroll-trigger" href="index.php">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="sampledata/index.php">MAGENTO</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="products.html">PRODUCTS & SERVICES</a>
             </li>
             <li class="nav-item">
@@ -83,12 +68,9 @@
               <a class="nav-link js-scroll-trigger" href="financing.html">FINANCING</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="contactsmptp.php">CONTACT</a>
+              <a class="nav-link js-scroll-trigger" href="contactsmtp.php">CONTACT</a>
             </li>
-             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="cart.php"><i class="fa fa-shopping-cart fa-lg"></i> CART</a> 
-              
-            </li>
+             
             
           </ul>
         </div>
@@ -107,38 +89,38 @@
    
     <div class="container" id="container">
      
-      <div class="col-lg-14 center-block" >
-
-          <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-              
-              <div class="carousel-item active">
-                <img class="d-block img-fluid" src="img/slideshow1.jpg" alt="First slide">
+          <div class="col-lg-14 center-block" >
+    
+              <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  
+                  <div class="carousel-item active">
+                    <img class="d-block img-fluid" src="img/slideshow1.jpg" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block img-fluid" src="img/room.png" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block img-fluid" src="img/brown.jpg" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
               </div>
-              <div class="carousel-item">
-                <img class="d-block img-fluid" src="img/room.png" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block img-fluid" src="img/brown.jpg" alt="Third slide">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-         <!-- end of modified code-->
- </div>
- 
+             <!-- end of modified code-->
+     </div>
+     
      
     </header>
     
@@ -261,7 +243,7 @@ https://www.parador.eu/products/laminate-flooring/trendtime/globetrotter-modern-
     <!-- Footer -->
     <footer class="py-5 bg-light">
       <div class="container">
-        <p class="m-0 text-center text-black"> Interiors Mobles de Cuina Copyright &copy; 2017 -
+        <p class="m-0 text-center text-black"> Interiors Mobles de Cuina Copyright &copy; 2018 -
         interiors.carcaixent@gmail.com - 626006246 / 962434779 </p>
       </div>
       <!-- /.container -->

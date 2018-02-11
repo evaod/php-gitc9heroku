@@ -55,7 +55,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="indexweb.html">HOME</a>
+              <a class="nav-link js-scroll-trigger" href="index.php">HOME</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="products.html">PRODUCTS & SERVICES</a>
@@ -73,8 +73,13 @@
               <a class="nav-link js-scroll-trigger" href="contact.html">CONTACT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="cart.php"><i class="fa fa-shopping-cart fa-lg"></i> CART</a> 
-              
+              <form target="paypal" class="nav-link js-scroll-trigger" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+              ">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+              </form>
             </li>
           </ul>
         </div>
@@ -115,7 +120,7 @@
         <?php
         //session_start();
        
-       //devalopment db variables-to use on cloud9
+       //development db variables-to use on cloud9
     #$host = "127.0.0.1";
     #$user = "evaod";                    //Your Cloud 9 username
     #$pass = "";                         //Remember, there is NO password by default!
@@ -140,7 +145,7 @@
     <!--First item - Lemans-->
         <div class="col-lg-3 col-md-6 mb-4">
           <div class="card">
-           <a href="lemans.php"><img class="card-img-top" src="img/gallery/shop/lemans.jpg" alt=""></a>
+           <a href="shopLemans.php"><img class="card-img-top" src="img/gallery/shop/lemans.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <?php
@@ -185,7 +190,7 @@
     
         <div class="col-lg-3 col-md-6 mb-4">
           <div class="card">
-           <a href="shop/lemans.php"><img class="card-img-top" src="img/gallery/shop/carousel.jpg" alt=""></a>
+           <a href="shopCarousel.php"><img class="card-img-top" src="img/gallery/shop/carousel.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <?php
@@ -228,7 +233,7 @@
         
         <div class="col-lg-3 col-md-6 mb-4">
           <div class="card">
-           <a href="shopItem.html"><img class="card-img-top" src="img/gallery/shop/magic.jpg" alt=""></a>
+           <a href="shopMagic.php"><img class="card-img-top" src="img/gallery/shop/magic.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <?php
@@ -272,7 +277,7 @@
         
         <div class="col-lg-3 col-md-6 mb-4">
           <div class="card">
-           <a href="shopItem.html"><img class="card-img-top" src="img/gallery/shop/cleaning.jpg" alt=""></a>
+           <a href="shopCleaning.php"><img class="card-img-top" src="img/gallery/shop/cleaning.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <?php
@@ -318,7 +323,7 @@
         
         <div class="col-lg-3 col-md-6 mb-4">
           <div class="card">
-           <a href="shopItem.html"><img class="card-img-top" src="img/gallery/shop/comfort.jpg" alt=""></a>
+           <a href="shopComfort.php"><img class="card-img-top" src="img/gallery/shop/comfort.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <?php
@@ -364,7 +369,7 @@
         
         <div class="col-lg-3 col-md-6 mb-4">
           <div class="card">
-           <a href="shopItem.html"><img class="card-img-top" src="img/gallery/shop/convoy.jpg" alt=""></a>
+           <a href="shopConvoy.php"><img class="card-img-top" src="img/gallery/shop/convoy.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <?php
@@ -410,7 +415,7 @@
         
         <div class="col-lg-3 col-md-6 mb-4">
           <div class="card">
-           <a href="shopItem.html"><img class="card-img-top" src="img/gallery/shop/tandem.jpg" alt=""></a>
+           <a href="shopTandem.php"><img class="card-img-top" src="img/gallery/shop/tandem.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <?php
@@ -463,7 +468,7 @@
     <footer class="py-5 bg-light">
       <div class="container">
        
-        <p class="m-0 text-center text-black"> Interiors Mobles de Cuina Copyright &copy; 2017 -
+        <p class="m-0 text-center text-black"> Interiors Mobles de Cuina Copyright &copy; 2018 -
         interiors.carcaixent@gmail.com - 626006246 / 962434779 </p>
       </div>
       <!-- /.container -->

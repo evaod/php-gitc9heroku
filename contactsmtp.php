@@ -94,7 +94,7 @@ Comments:	'.$_POST['comments'].'
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="indexweb.html">HOME</a>
+              <a class="nav-link js-scroll-trigger" href="index.php">HOME</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="products.html">PRODUCTS & SERVICES</a>
@@ -111,10 +111,7 @@ Comments:	'.$_POST['comments'].'
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="contact.hmtl">CONTACT</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="cart.php"><i class="fa fa-shopping-cart fa-lg"></i> CART</a> 
-              
-            </li>
+            
           </ul>
         </div>
       </div>
@@ -237,7 +234,7 @@ Comments:	'.$_POST['comments'].'
     <footer class="py-5 bg-light">
       <div class="container">
        
-        <p class="m-0 text-center text-black"> Interiors Mobles de Cuina Copyright &copy; 2017 -
+        <p class="m-0 text-center text-black"> Interiors Mobles de Cuina Copyright &copy; 2018 -
         interiors.carcaixent@gmail.com - 626006246 / 962434779 </p>
       </div>
       <!-- /.container -->

@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php 	//This will save the value of the total as a cookie 
-		//so that it can be accessed on ebusiness3.php
-		
-		
-		setcookie("Result", $_POST['Total'], time() +3600);
- 
- ?>
   <head>
 
     <meta charset="utf-8">
@@ -15,33 +8,35 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Online Shop</title>
+    <title>Comfort II</title>
     <!-- Used this example as a starting point for my home page and modified the skeleton and navbar
     https://startbootstrap.com/template-overviews/scrolling-nav/-->
     
     
-   <!-- learned how to add an icon to the the tab here:
-   https://stackoverflow.com/questions/11488960/how-do-i-put-my-websites-logo-to-be-the-icon-image-in-browser-tabs -->
+    <!-- learned how to add an icon to the the tab here:
+    https://stackoverflow.com/questions/11488960/how-do-i-put-my-websites-logo-to-be-the-icon-image-in-browser-tabs -->
     <link rel="shortcut icon" type="image/x-icon" href="img/icon.ico" />
-   
+     
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-     <!-- Custom styles for this template -->
-     <link href="css/custom.css" rel="stylesheet">
-     <!--Font awesome icons -->
+    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+       
+    <!--Font awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
- 
+    </head>
+   
  
   <body id="page-top">
 
-  <!--jquery-->
+    <!--jquery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!--complete bootstrap javascript-->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <!-- includes the Braintree JS client SDK -->
-<script src="https://js.braintreegateway.com/web/dropin/1.9.3/js/dropin.min.js"></script>
+    
+    <!--complete bootstrap javascript-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   
 
     <!-- Navigation -->
     <!-- Learned about chaanging colour of text and background in navbar here
@@ -59,7 +54,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="indexweb.html">HOME</a>
+              <a class="nav-link js-scroll-trigger" href="index.php">HOME</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="products.html">PRODUCTS & SERVICES</a>
@@ -76,9 +71,15 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="contact.html">CONTACT</a>
             </li>
-             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="cart.php"><i class="fa fa-shopping-cart fa-lg"></i> CART</a> 
-              
+             
+            <li class="nav-item">
+              <form target="paypal" class="nav-link js-scroll-trigger" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+              ">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+              </form>
             </li>
           </ul>
         </div>
@@ -88,11 +89,12 @@
     <!--secondary navbar-->
     <header>
       
-           <div class="container ">
-       <a class="style" href ="indexweb.html">HOME /</a>
-        <a class="style active " href ="shop.html">ONLINE SHOP</a>
-        <br>
-        </div>
+    <div class="container ">
+      <a class="style" href ="indexweb.html">HOME /</a>
+      <a class="style active " href ="shop.php">ONLINE SHOP</a>
+      <br>
+    </div>
+    
     </header>
     
     <section  id="about">
@@ -100,18 +102,25 @@
         <!-- start of edited code from
         https://github.com/BlackrockDigital/startbootstrap-small-business/blob/master/index.html
         
-        
         Page Content -->
     <div class="container">
       
       
       <?php
-        //session_start();
+    //session_start();
        
-    $host = "127.0.0.1";
-    $user = "evaod";                    //Your Cloud 9 username
-    $pass = "";                         //Remember, there is NO password by default!
-    $db = "sample_db";                  //Your database name you want to connect to
+    //Development db variables-to use on cloud9
+    
+      //$host = "127.0.0.1";
+      //$user = "evaod";                    //Your Cloud 9 username
+      //$pass = "";                         //Remember, there is NO password by default!
+      //$db = "sample_db";                  //Your database name you want to connect to
+    
+    //Production variables -  To use on Heroku ClearDB
+    $host = "eu-cdbr-west-02.cleardb.net";
+    $user = "b110759b7e7766";                   
+    $pass = "b0ab1edf";                         
+    $db = "heroku_bb468c9befbbe02";   
     
     // Create connection
             $conn = new mysqli($host, $user, $pass, $db);
@@ -119,19 +128,18 @@
             if ($conn->connect_error) {
                 die("Connection failed: " . $conn->connect_error);
             } 
-
-           
         ?>
+        
       <!-- Heading Row -->
       <div class="row my-4">
         <div class="col-lg-4">
           <!--<img class="img-fluid rounded" src="http://placehold.it/900x400" alt="">-->
-          <img class="img-fluid rounded" src="img/gallery/shop/carousel.jpg" alt="">
+          <img class="img-fluid rounded" src="img/gallery/shop/comfort.jpg" alt="">
         </div>
         <!-- /.col-lg-8 -->
         <div class="col-lg-8">
           <h1><?php
-              $sql = "SELECT * FROM tblProducts WHERE product_id='2'";
+              $sql = "SELECT * FROM tblProducts WHERE product_id='9'";
               $result = $conn->query($sql);
           
               if ($result->num_rows > 0) {
@@ -148,7 +156,7 @@
               ?></h1>
               <h1></h1>
           <p><?php
-              $sql = "SELECT * FROM tblProducts WHERE product_id='2'";
+              $sql = "SELECT * FROM tblProducts WHERE product_id='9'";
               $result = $conn->query($sql);
           
               if ($result->num_rows > 0) {
@@ -163,7 +171,7 @@
               ?></p>
               
               <p><?php
-              $sql = "SELECT * FROM tblProducts WHERE product_id='2'";
+              $sql = "SELECT * FROM tblProducts WHERE product_id='9'";
               $result = $conn->query($sql);
           
               if ($result->num_rows > 0) {
@@ -177,7 +185,17 @@
                       }
                     $conn->close();
               ?></p>
-          <a class="btn btn-dark btn-lg" href="#">Add to cart</a>
+          
+          <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="97JDCQVYCJN3L">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </form>
+
+
+
+
         </div>
         <!-- /.col-md-4 -->
       </div>
@@ -199,7 +217,7 @@
     <footer class="py-5 bg-light">
       <div class="container">
        
-        <p class="m-0 text-center text-black"> Interiors Mobles de Cuina Copyright &copy; 2017 -
+        <p class="m-0 text-center text-black"> Interiors Mobles de Cuina Copyright &copy; 2018 -
         interiors.carcaixent@gmail.com - 626006246 / 962434779 </p>
       </div>
       <!-- /.container -->

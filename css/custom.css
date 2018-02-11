@@ -54,8 +54,10 @@ https://stackoverflow.com/questions/37883498/how-to-change-navbar-bootstrap-heig
  
   
    padding: 50px 100px 5px;
-  
 }
+
+
+
 /*! This is where I learned how to change the width and hight of my slideshow
 https://stackoverflow.com/questions/13391566/twitter-bootstrap-carousel-different-height-images-cause-bouncing-arrows 
   width: auto;
@@ -64,8 +66,6 @@ https://stackoverflow.com/questions/13391566/twitter-bootstrap-carousel-differen
   width: 800px;
   height: 300px;
   max-height: 300px;
-  
-  
 }
 
 /*!This is how I made my slideshow a fixed width. Learned how to do it here:
@@ -74,8 +74,6 @@ https://stackoverflow.com/questions/2279519/how-to-get-main-div-container-to-ali
 #container{
     width: 800px;
 }
-
-
 
 /*! This is the cs code to make the picture links at the bottom of the homw page zoom on hover.
 Modified original code from this site:
@@ -103,7 +101,6 @@ zoom on hover*/
   
 
   /*end of modified code for zoom on hover*/
-
 
 h1{
     font-style: normal;
@@ -138,17 +135,10 @@ Learned how to change position of my form here:
 https://stackoverflow.com/questions/20853066/how-to-center-form-in-bootstrap-3*/
 .center-div{
   margin: 0 auto;
-    width:400px /* value of your choice which suits your alignment */
+  width:400px /* value of your choice which suits your alignment */
+   
    
 }
-.center-div2{
-  
-  margin-left:25%;
- 
-    width:75% /* value of your choice which suits your alignment */
-   
-}
-
 
 /*style for checkout page*/
 .table>tbody>tr>td, .table>tfoot>tr>td{
@@ -184,4 +174,14 @@ https://stackoverflow.com/questions/20853066/how-to-center-form-in-bootstrap-3*/
 	table#cart tfoot td{display:block; }
 	table#cart tfoot td .btn{display:block;}
 	
+}
+
+
+body {
+padding: 0;
+margin: 0;
+}
+div {
+width: 100%;
+height: 100%;
 }
