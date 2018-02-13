@@ -118,9 +118,9 @@
     
     //Production variables -  To use on Heroku ClearDB
     $host = "eu-cdbr-west-02.cleardb.net";
-    $user = "b110759b7e7766";                   
-    $pass = "b0ab1edf";                         
-    $db = "heroku_bb468c9befbbe02";   
+    $user = "b753690a4c189a";                   
+    $pass = "4d3b8a01";                         
+    $db = "heroku_516c1a6c01766ca";       
     
     // Create connection
             $conn = new mysqli($host, $user, $pass, $db);

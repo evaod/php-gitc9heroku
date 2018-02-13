@@ -128,9 +128,9 @@
     
     //Production variables -  To use on Heroku ClearDB
     $host = "eu-cdbr-west-02.cleardb.net";
-    $user = "b110759b7e7766";                   
-    $pass = "b0ab1edf";                         
-    $db = "heroku_bb468c9befbbe02";                  
+    $user = "b753690a4c189a";                   
+    $pass = "4d3b8a01";                         
+    $db = "heroku_516c1a6c01766ca";                  
     
     // Create connection
             $conn = new mysqli($host, $user, $pass, $db);
@@ -143,7 +143,7 @@
         ?>
    
     <!--First item - Lemans-->
-        <div class="col-lg-3 col-md-6 mb-4">
+        <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card">
            <a href="shopLemans.php"><img class="card-img-top" src="img/gallery/shop/lemans.jpg" alt=""></a>
             <div class="card-body">
@@ -188,7 +188,7 @@
         
     <!--Second item - Carousel-->    
     
-        <div class="col-lg-3 col-md-6 mb-4">
+        <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card">
            <a href="shopCarousel.php"><img class="card-img-top" src="img/gallery/shop/carousel.jpg" alt=""></a>
             <div class="card-body">
@@ -231,7 +231,7 @@
         
         <!--Third item  - Magic corner-->
         
-        <div class="col-lg-3 col-md-6 mb-4">
+        <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card">
            <a href="shopMagic.php"><img class="card-img-top" src="img/gallery/shop/magic.jpg" alt=""></a>
             <div class="card-body">
@@ -275,7 +275,7 @@
         
         <!--Fourth item - Cleaning agent-->
         
-        <div class="col-lg-3 col-md-6 mb-4">
+        <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card">
            <a href="shopCleaning.php"><img class="card-img-top" src="img/gallery/shop/cleaning.jpg" alt=""></a>
             <div class="card-body">
@@ -321,7 +321,7 @@
         
          <!--Fifth item - Comfort ii-->
         
-        <div class="col-lg-3 col-md-6 mb-4">
+        <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card">
            <a href="shopComfort.php"><img class="card-img-top" src="img/gallery/shop/comfort.jpg" alt=""></a>
             <div class="card-body">
@@ -367,7 +367,7 @@
         
         <!--Sixth item - Convoy-->
         
-        <div class="col-lg-3 col-md-6 mb-4">
+        <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card">
            <a href="shopConvoy.php"><img class="card-img-top" src="img/gallery/shop/convoy.jpg" alt=""></a>
             <div class="card-body">
@@ -413,7 +413,7 @@
         
         <!--Seventh item - Tandem-->
         
-        <div class="col-lg-3 col-md-6 mb-4">
+        <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card">
            <a href="shopTandem.php"><img class="card-img-top" src="img/gallery/shop/tandem.jpg" alt=""></a>
             <div class="card-body">
