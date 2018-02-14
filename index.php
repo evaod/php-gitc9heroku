@@ -44,7 +44,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
       <div class="container">
        
-      <a class="navbar-brand js-scroll-trigger" href="indexweb.html">
+      <a class="navbar-brand js-scroll-trigger" href="index.php">
       <img src="img/Logo_Interiors.png" width="200" height="80" alt="">
       </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">

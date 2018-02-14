@@ -28,74 +28,7 @@
      <!--Font awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
-    <script>
-      $(document).ready(function(){
-        var itaImgLink = "http://www.roemheld.de/IT/Data/Images/Address/Italien.gif";
-    	var engImgLink = "http://www.roemheld.de/IT/Data/Images/Address/Grossbritanien.gif";
-		var deuImgLink = "http://www.roemheld.de/IT/Data/Images/Address/Deutschland.gif";
-		var fraImgLink = "http://www.roemheld.de/IT/Data/Images/Address/Frankreich.gif";
-
-		var imgBtnSel = $('#imgBtnSel');
-		var imgBtnIta = $('#imgBtnIta');
-		var imgBtnEng = $('#imgBtnEng');
-		var imgBtnDeu = $('#imgBtnDeu');
-		var imgBtnFra = $('#imgBtnFra');
-
-		var imgNavSel = $('#imgNavSel');
-		var imgNavIta = $('#imgNavIta');
-		var imgNavEng = $('#imgNavEng');
-		var imgNavDeu = $('#imgNavDeu');
-		var imgNavFra = $('#imgNavFra');
-
-		var spanNavSel = $('#lanNavSel');
-		var spanBtnSel = $('#lanBtnSel');
-
-		imgBtnSel.attr("src",itaImgLink);
-		imgBtnIta.attr("src",itaImgLink);
-		imgBtnEng.attr("src",engImgLink);
-		imgBtnDeu.attr("src",deuImgLink);
-		imgBtnFra.attr("src",fraImgLink);
-
-		imgNavSel.attr("src",itaImgLink);
-		imgNavIta.attr("src",itaImgLink);
-		imgNavEng.attr("src",engImgLink);
-		imgNavDeu.attr("src",deuImgLink);
-		imgNavFra.attr("src",fraImgLink);
-
-		$( ".language" ).on( "click", function( event ) {
-			var currentId = $(this).attr('id');
-
-			if(currentId == "navIta") {
-				imgNavSel.attr("src",itaImgLink);
-				spanNavSel.text("ITA");
-			} else if (currentId == "navEng") {
-				imgNavSel.attr("src",engImgLink);
-				spanNavSel.text("ENG");
-			} else if (currentId == "navDeu") {
-				imgNavSel.attr("src",deuImgLink);
-				spanNavSel.text("DEU");
-			} else if (currentId == "navFra") {
-				imgNavSel.attr("src",fraImgLink);
-				spanNavSel.text("FRA");
-			}
-
-			if(currentId == "btnIta") {
-				imgBtnSel.attr("src",itaImgLink);
-				spanBtnSel.text("ITA");
-			} else if (currentId == "btnEng") {
-				imgBtnSel.attr("src",engImgLink);
-				spanBtnSel.text("ENG");
-			} else if (currentId == "btnDeu") {
-				imgBtnSel.attr("src",deuImgLink);
-				spanBtnSel.text("DEU");
-			} else if (currentId == "btnFra") {
-				imgBtnSel.attr("src",fraImgLink);
-				spanBtnSel.text("FRA");
-			}
-			
-		});
-});
-    </script>
+   
   </head>
  
  
@@ -104,7 +37,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    <!--javascript-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
+    <link href="vendor/jquery/jquery.min.js" rel="stylesheet">
+   
     
     <!-- Navigation -->
     <!-- Learned about chaanging colour of text and background in navbar here
@@ -146,17 +80,13 @@
               
             </div>
             </li>
-          
-               
-               <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img id="imgNavSel" src="" alt="..." class="img-thumbnail icon-small">  <span id="lanNavSel">ITA</span> <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-            	        <li><a id="navIta" href="#" class="language"> <img id="imgNavIta" src="" alt="..." class="img-thumbnail icon-small">  <span id="lanNavIta">Italiano</span></a></li>
-                        <li><a id="navDeu" href="#" class="language"> <img id="imgNavDeu" src="" alt="..." class="img-thumbnail icon-small">  <span id="lanNavDeu">Deutsch</span></a></li>
-        			    <li><a id="navFra" href="#" class="language"><img id="imgNavFra" src="" alt="..." class="img-thumbnail icon-small">  <span id="lanNavFra">Francais</span></a></li>
-        			    <li><a id="navEng" href="#" class="language"><img id="imgNavEng" src="" alt="..." class="img-thumbnail icon-small">  <span id="lanNavEng">English</span></a></li>
-        	        </ul>
-                </li>
+            
+            <li class="nav-item">
+               <select name='lang' class='language-select'>
+                <option value='en'>English</option>
+                <option value='sp'>Spanish</option>
+                </select>
+            </li>
                
          
           </ul>
@@ -171,9 +101,63 @@
         <a class="style " href ="products.html">PRODUCTS /</a>
         <a class="style active" href ="kitchenFurniture.html">KITCHEN FURNITURE</a>
         <br>
+        
+        
+    <select name='lang' class='language-select'>
+    <option value='en'>English</option>
+    <option value='es'>Spanish</option>
+    </select>
+
+    <!-- this wont be shown to the user + google will ignore it because it's a script  -->
+    <script type="text/html-template" lang='es'>
+        <strong>hola</strong>, lorem ipsum dolor
+    </script>
+    <script type="text/html-template" lang='en'>
+        <strong>hello</strong>, lorem ipsum dolor
+    </script>
+
+
+
+      <script type="text/javascript">
+      $(document).ready(function() {
+          $('select.language-select').on('change', function(evt) {
+              var selectedLanguage = $(this).find('option:selected').val(),
+                  articleHtml = $('script[type="text/html-template"][lang=' + selectedLanguage + ']').html(),
+                  article = $('div.article');
+              article.html(articleHtml);
+          });
+      });
+      </script>
+
         </div>
         
-      <div class="container text-center ">
+        
+        
+     <button onclick="myFunction()">Click Me</button>
+
+<div id="myDIV">Hello</div>
+
+
+
+<script type="text/javascript">
+  function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.innerHTML === "Hello") {
+    x.innerHTML = "Swapped text!";
+  } else {
+    x.innerHTML = "Hello";
+  }
+}
+</script>
+     
+     
+     
+     
+     
+     
+     
+        
+     <div class="container text-center ">
       
        
     </header>
@@ -187,7 +171,7 @@
 
         <div class="col-lg-4 col-md-6 mb-4 img-hover ">
           <div class="card">
-            <img class="card-img-top img-responsive img-rounded" src="img/products/kitchenfurniture.jpg" alt="">
+            <img href="index.php" class="card-img-top img-responsive img-rounded" src="img/products/kitchenfurniture.jpg" alt="">
             
              <div class="card-body" id="cardproducts">
               <h5 class="card-title">
@@ -216,7 +200,7 @@ https://www.parador.eu/products/laminate-flooring/trendtime/globetrotter-modern-
 
         <div class="col-lg-4 col-md-6 mb-4 img-hover ">
           <div class="card ">
-            <img class="card-img-top img-responsive img-rounded" src="img/products/accessories.jpg" alt="">
+            <img href="index.php" class="card-img-top img-responsive img-rounded" src="img/products/accessories.jpg" alt="">
           
            <div class="card-body" id="cardproducts">
               <h5 class="card-title">

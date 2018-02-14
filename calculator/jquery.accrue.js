@@ -133,13 +133,13 @@
         operation: "keyup",
         default_values: {
             amount: "€7,500",
-            rate: "3%",
+            rate: "7%",
             rate_compare: "1.49%",
             term: "36m"
         },
         field_titles: {
             amount: "Loan Amount",
-            rate: "Rate",
+            rate: "Rate (APR)",
             rate_compare: "Comparison Rate",
             term: "Term"
         },
@@ -154,7 +154,7 @@
         response_basic: 
             '<p><strong>Monthly Payment:</strong><br />€%payment_amount%</p>'+
             '<p><strong>Number of Payments:</strong><br />%num_payments%</p>'+
-            '<p><strong>Total Payments:</strong><br />%total_payments%</p>'+
+            '<p><strong>Total Payments:</strong><br />€%total_payments%</p>'+
             '<p><strong>Total Interest:</strong><br />€%total_interest%</p>',
         response_compare: '<p class="total-savings">Save €%savings% in interest!</p>',
         error_text: '<p class="error">Please fill in all fields.</p>',
@@ -165,7 +165,7 @@
 	// This function is used to add thousand seperators to numerical ouput
 	// as a means of properly formatting money
     function formatNumber (num) {
-        return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "€1,");
+        return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
     }
 
     // GET FIELD
@@ -366,10 +366,10 @@
                 output_content = output_content+ 
                     '<tr>'+
                     '<'+cell_tag+' class="accrue-payment-number">'+(i+1)+'</'+cell_tag+'>'+
-                    '<'+cell_tag+' class="accrue-payment-amount">€'+formatNumber(loan_info.payment_amount_formatted)+'</'+cell_tag+'>'+
-                    '<'+cell_tag+' class="accrue-total-interest">€'+formatNumber(counter_interest.toFixed(2))+'</'+cell_tag+'>'+
-                    '<'+cell_tag+' class="accrue-total-payments">€'+formatNumber(counter_payment.toFixed(2))+'</'+cell_tag+'>'+
-                    '<'+cell_tag+' class="accrue-balance">€'+formatNumber(counter_balance.toFixed(2))+'</'+cell_tag+'>'+
+                    '<'+cell_tag+' class="accrue-payment-amount">$'+formatNumber(loan_info.payment_amount_formatted)+'</'+cell_tag+'>'+
+                    '<'+cell_tag+' class="accrue-total-interest">$'+formatNumber(counter_interest.toFixed(2))+'</'+cell_tag+'>'+
+                    '<'+cell_tag+' class="accrue-total-payments">$'+formatNumber(counter_payment.toFixed(2))+'</'+cell_tag+'>'+
+                    '<'+cell_tag+' class="accrue-balance">$'+formatNumber(counter_balance.toFixed(2))+'</'+cell_tag+'>'+
                     '</tr>';
             }
 
