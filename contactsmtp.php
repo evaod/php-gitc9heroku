@@ -18,14 +18,17 @@ Comments:	'.$_POST['comments'].'
     $mail->IsSMTP();                // Sets up a SMTP connection  
     $mail->SMTPAuth = true;         // Connection with the SMTP does require authorization    
     $mail->SMTPSecure = "ssl";      // Connect using a TLS connection  
-    $mail->Host = "mail.smtp2go.com";  //Gmail SMTP server address
+    $mail->Host = "smtp.sendgrid.net";  //Gmail SMTP server address
      #$mail->Port = 465;  //Gmail SMTP port
-   $mail->Port = 2525;  //Gmail SMTP port
+   $mail->Port = 465;  //Gmail SMTP port
     $mail->Encoding = '7bit';
     
     // Authentication  
-    $mail->Username   = "evaodriscoll96@gmail.com"; // Your full Gmail address
-    $mail->Password   = "bW50NnFuN3F3cTAw"; // Your Gmail password
+   //$mail->Username   = "evaodriscoll96@gmail.com"; // Your full Gmail address
+    //$mail->Password   = "bW50NnFuN3F3cTAw"; // Your Gmail password
+      
+      $mail->Username   = "evaodriscoll96@gmail.com"; // Your full Gmail address
+      $mail->Password   = "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"; // Your Gmail password
       
     // Compose
     $mail->SetFrom($_POST['emailid'], $_POST['fullname']);
