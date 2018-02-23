@@ -4,8 +4,9 @@
 
 	function send_email ($to, $subject, $body, $message)
 	{
-		$from = "<donotreply@" . $_SERVER['SERVER_NAME'] . ">";
-		$sendgrid = new SendGrid($_ENV["SENDGRID_USERNAME"], $_ENV["SENDGRID_PASSWORD"]);
+		/*$from = "<donotreply@" . $_SERVER['SERVER_NAME'] . ">";*/
+		$from = "<donotreply@" . $_SERVER['heroku'] . ">";
+		$sendgrid = new SendGrid($_ENV["apikey"], $_ENV["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"]);
 		$email = new SendGrid\Email();
 
 		$email
@@ -78,7 +79,7 @@
 			if (strlen($_POST["contact_message"]) < 2) $errors["contact_message"] = "Please enter your message";
 			if (isEmpty($errors))
 			{
-				$to = "m1samuel@ucsd.edu";
+				$to = "114713729@umail.ucc.ie";
 				$from = $_POST["contact_email"];
 				$subject = "Contact Form Message";
 				$message = "Thank you for contacting us. Your message has been successfully sent to one of our technicians. You should receive a reply within one business day.";
