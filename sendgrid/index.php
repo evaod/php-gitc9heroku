@@ -5,7 +5,7 @@
 	function send_email ($to, $subject, $body, $message)
 	{
 		/*$from = "<donotreply@" . $_SERVER['SERVER_NAME'] . ">";*/
-		$from = "<donotreply@" . $_SERVER['heroku'] . ">";
+		$from = "<donotreply@" . $_SERVER['test-database1.herokuapp.com'] . ">";
 		$sendgrid = new SendGrid($_ENV["apikey"], $_ENV["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"]);
 		$email = new SendGrid\Email();
 
