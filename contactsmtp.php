@@ -27,8 +27,8 @@ Comments:	'.$_POST['comments'].'
    //$mail->Username   = "evaodriscoll96@gmail.com"; // Your full Gmail address
     //$mail->Password   = "bW50NnFuN3F3cTAw"; // Your Gmail password
       
-      $mail->Username   = "evaodriscoll96@gmail.com"; // Your full Gmail address
-      $mail->Password   = "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"; // Your Gmail password
+      $mail->Username   = "apikey"; // Your full Gmail address
+      $mail->Password   = "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"; // Your Gmail password
       
     // Compose
     $mail->SetFrom($_POST['emailid'], $_POST['fullname']);
@@ -37,7 +37,7 @@ Comments:	'.$_POST['comments'].'
     $mail->MsgHTML($message);
  
     // Send To  
-    $mail->AddAddress("evaodriscoll96@gmail.com", "evaodriscoll96@gmail.com"); // Where to send it - Recipient
+    $mail->AddAddress("evaodriscoll96@gmail.com", "114713729@umail.ucc.ie"); // Where to send it - Recipient
     $result = $mail->Send();		// Send!  
 	$message = $result ? '<div class="alert alert-success" role="alert"><strong>Success!</strong>Message Sent Successfully!</div>' : '<div class="alert alert-danger" role="alert"><strong>Error!</strong>There was a problem delivering the message.</div>';  
 	unset($mail);
