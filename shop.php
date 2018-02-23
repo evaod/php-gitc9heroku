@@ -70,7 +70,7 @@
               <a class="nav-link js-scroll-trigger" href="financing.html">FINANCING</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="contact.html">CONTACT</a>
+              <a class="nav-link js-scroll-trigger" href="contact.php">CONTACT</a>
             </li>
             <li class="nav-item">
               <form target="paypal" class="nav-link js-scroll-trigger" action="https://www.paypal.com/cgi-bin/webscr" method="post" >

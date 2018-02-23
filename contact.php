@@ -124,7 +124,7 @@ Comments:	'.$_POST['comments'].'
       
         <div class="container ">
        <a class="style" href ="index.php">HOME /</a>
-        <a class="style active" href ="contact.html">CONTACT</a>
+        <a class="style active" href ="contact.php">CONTACT</a>
         <br>
         </div>
         
