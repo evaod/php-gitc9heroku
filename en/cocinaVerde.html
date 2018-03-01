@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 
   <head>
@@ -16,24 +16,22 @@
     
    <!-- learned how to add an icon to the the tab here:
    https://stackoverflow.com/questions/11488960/how-do-i-put-my-websites-logo-to-be-the-icon-image-in-browser-tabs -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/icon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/icon.ico" />
    
     <<!-- Font awesome -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
     
     
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
      <!-- Custom styles for this template -->
-    <link href="css/products.css" rel="stylesheet">
-   <link href="css/scroll.css" rel="stylesheet">
+    <link href="../css/products.css" rel="stylesheet">
+   <link href="../css/scroll.css" rel="stylesheet">
     
-         <!-- Custom styles for this template -->
-    <link href="css/mapstyle.json" rel="stylesheet">
-    
+         
      <!--Font awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
@@ -51,7 +49,7 @@
       <div class="container">
        
       <a class="navbar-brand js-scroll-trigger" href="index.php">
-      <img src="img/Logo_Interiors.png" width="200" height="80" alt="">
+      <img src="../img/Logo_Interiors.png" width="200" height="80" alt="">
       </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -78,8 +76,8 @@
             </li>
             <li class="nav-item">
               <div class="btn-group" role="group" aria-label="Basic example">
-              <a href="index.php"> <button type="button" class="btn btn-light">ES</button></a>
-               <a href="en/index.php"><button type="button" class="btn  btn-light">EN</button></a>
+              <a href="../index.php"> <button type="button" class="btn btn-light">ES</button></a>
+               <a href="index.php"><button type="button" class="btn  btn-light">EN</button></a>
               
             </div>
             </li>
@@ -90,9 +88,9 @@
 
    
    
-    <section id="section02" class="demo" style="background-image: url('img/gallery/home/verde75.jpg')">
+    <section id="section02" class="demo" style="background-image: url('../img/gallery/home/verde75.jpg')">
     	<h1>Cocina Verde</h1>
-    	<a href="#header1"><span></span>Ver más</a>
+    	<a href="#header1"><span></span>Scroll</a>
   </section>
 
 <header class="bg-primary" id="header1">
@@ -124,13 +122,13 @@
                 <div class="row">
         <div class="col-lg-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="img/gallery/verde2.jpg" alt=""></a>
+            <a href="#"><img class="card-img-top" src="../img/gallery/verde2.jpg" alt=""></a>
            
           </div>
         </div>
         <div class="col-lg-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="img/gallery/verde1.jpg" alt=""></a>
+            <a href="#"><img class="card-img-top" src="../img/gallery/verde1.jpg" alt=""></a>
             
           </div>
         </div>
@@ -154,27 +152,16 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/popper/popper.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom JavaScript for this theme -->
-    <script src="js/scrolling-nav.js"></script>
-    <script>
-        $(function() {
-    	$("a[href*=#]").on("click", function(e) {
-    		e.preventDefault();
-    		$("html, body").animate(
-    			{ scrollTop: $($(this).attr("href")).offset().top },
-    			500,
-    			"linear"
-    		);
-    	});
-    });
-        </script>
+    <script src="../js/scrolling-nav.js"></script>
+    
   </body>
 
 </html>

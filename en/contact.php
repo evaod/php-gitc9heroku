@@ -9,7 +9,7 @@
       Email:	'.$_POST['emailid'].'<br />
       Comments:	'.$_POST['comments'].'
       ';
-          require "PHPMailer-master/class.phpmailer.php"; //include phpmailer class
+          require "../PHPMailer-master/class.phpmailer.php"; //include phpmailer class
             
           // Instantiate Class  
           $mail = new PHPMailer();  
@@ -36,14 +36,14 @@
           // Send To  
           $mail->AddAddress("evaodriscoll96@gmail.com"); // Where to send it - Recipient
           $result = $mail->Send();		// Send!  
-      	$message = $result ? '<div class="alert alert-success" role="alert"><strong>Success!</strong>Message Sent Successfully!</div>' : '<div class="alert alert-danger" role="alert"><strong>Error!</strong>There was a problem delivering the message.</div>';  
+      	$message = $result ? '<div class="alert alert-success" role="alert"><strong>Success! </strong>Message Sent Successfully!</div>' : '<div class="alert alert-danger" role="alert"><strong>Error!</strong>There was a problem delivering the message.</div>';  
       	unset($mail);
       }
 //end of edited code
 ?>
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 
   <head>
@@ -60,16 +60,16 @@
     
    <!-- learned how to add an icon to the the tab here:
    https://stackoverflow.com/questions/11488960/how-do-i-put-my-websites-logo-to-be-the-icon-image-in-browser-tabs -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/icon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/icon.ico" />
    
      <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     
     
- <link href='css/custom.css' rel='stylesheet' type='text/css'>
+ <link href='../css/custom.css' rel='stylesheet' type='text/css'>
     
-   <link href='css/products.css' rel='stylesheet' type='text/css'>
+   <link href='../css/products.css' rel='stylesheet' type='text/css'>
      <!--Font awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
@@ -86,7 +86,7 @@
       <div class="container">
        
       <a class="navbar-brand js-scroll-trigger" href="index.php">
-      <img src="img/Logo_Interiors.png" width="200" height="80" alt="">
+      <img src="../img/Logo_Interiors.png" width="200" height="80" alt="">
       </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -94,31 +94,30 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.php">INICIO</a>
+              <a class="nav-link js-scroll-trigger" href="index.php">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="products.html">PRODUCTOS & SERVICIOS</a>
+              <a class="nav-link js-scroll-trigger" href="products.html">PRODUCTS & SERVICES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="shop.php">TIENDA ONLINE</a>
+              <a class="nav-link js-scroll-trigger" href="shop.php">ONLINE SHOP</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="gallery.html">GALERÍA</a>
+              <a class="nav-link js-scroll-trigger" href="gallery.html">GALLERY</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="financing.html">FINANCIACIÓN</a>
+              <a class="nav-link js-scroll-trigger" href="financing.html">FINANCING</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="contact.php">CONTACTO</a>
+              <a class="nav-link js-scroll-trigger" href="contact.hmtl">CONTACT</a>
             </li>
             <li class="nav-item">
               <div class="btn-group" role="group" aria-label="Basic example">
-              <a href="index.php"> <button type="button" class="btn btn-light">ES</button></a>
-               <a href="en/index.php"><button type="button" class="btn  btn-light">EN</button></a>
+              <a href="../index.php"> <button type="button" class="btn btn-light">ES</button></a>
+               <a href="index.php"><button type="button" class="btn  btn-light">EN</button></a>
               
             </div>
             </li>
-            
           </ul>
         </div>
       </div>
@@ -127,19 +126,18 @@
     <header class="bg-primary" id="productspadding">
       
         <div class="container ">
-       <a class="style" href ="index.php">INICIO /</a>
-        <a class="style active" href ="contact.php">CONTACTO</a>
+       <a class="style" href ="index.php">HOME /</a>
+        <a class="style active" href ="contact.php">CONTACT</a>
         <br>
         </div>
         
       <div class="container text-center ">
       
     
-        <h1>Experiencia y profesionalidad</h1>
-        <p class="lead"> Todas nuestras cocinas e interiores están diseñados de manera que el cliente los pueda customizar a su aire, con una gran variedad de colores, materiales y acabados.
-        Si está interesado en nuestros productos, contáctenos a través de nuestro email <b>interiors.carcaixent@gmail.com</b>, por teléfono <b>626006246 </b> o a través de nuestro formulario online. <br>
-        El horario de tienda es Lunes-Viernes de 10 a 13:30 y de 17:30 a 20:30.
-        
+        <h1>Experience and professionality</h1>
+        <p class="lead"> All of our kitchens and interiors are designed in a way that the client can customise them to their liking, with a wide variety of colours, materials and finishings.
+        If you are interested in our products, you can contact us through email at <b>interiors.carcaixent@gmail.com</b>, by telephone <b>626006246 </b>or through the online form.<br>
+        The shop opening hours are Monday to Friday 10 to 13:30 and 5:30 to 8:30.
        
         </p>
        
@@ -163,17 +161,17 @@
     	<div class="panel-body">
     	<form name="form1" id="form1" action="" method="post">
     			<fieldset>
-    			  <input type="text" class="form-control" name="fullname" placeholder="Nombre" />
+    			  <input type="text" class="form-control" name="fullname" placeholder="Full Name" />
     			  <br />
-    			  <input type="text" class="form-control" name="subject" placeholder="Asunto" />
+    			  <input type="text" class="form-control" name="subject" placeholder="Subject" />
     			  <br />
-    			  <input type="text" class="form-control" name="phone" placeholder="Teléfono" />
+    			  <input type="text" class="form-control" name="phone" placeholder="Phone" />
     			  <br />
     			  <input type="email" class="form-control" name="emailid" placeholder="Email" />
     			  <br />
-    			  <textarea rows="4" class="form-control" cols="20" name="comments" placeholder="Commentarios"></textarea>
+    			  <textarea rows="4" class="form-control" cols="20" name="comments" placeholder="Comments"></textarea>
     			  <br />
-    			  <input type="submit" class="btn btn-dark"name="submit" value="Enviar mensaje" />
+    			  <input type="submit" class="btn btn-dark"name="submit" value="Send Message" />
     			</fieldset>
     	</form>
     	<p><?php if(!empty($message)) echo $message; ?></p>
@@ -188,8 +186,8 @@
         <!-- This is where I learned how to round the borders of images:
         https://v4-alpha.getbootstrap.com/utilities/borders/-->
         
-        <img width="250" height="350" class="img-responsive rounded "  src="img/shop.jpg" alt="shop">
-        <img width="250" height="350" class="img-responsive rounded" src="img/shop1.jpg" alt="shop">
+        <img width="250" height="350" class="img-responsive rounded "  src="../img/shop.jpg" alt="shop">
+        <img width="250" height="350" class="img-responsive rounded" src="../img/shop1.jpg" alt="shop">
         
          
          
@@ -218,19 +216,7 @@
          width="100%" height="370" frameborder="0" style="border:0" allowfullscreen></iframe>
         
            
-            
-          <!-- <script async defer
-         src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJa6qxsTKlYQ0RfaKUESvv9Do&key=AIzaSyB6LKf07unez8IAWLhqIhi-YszaeAKfQlA">
-         </script>-->
-    
-        <!--This is where I got the code for my map
-        https://developers.google.com/maps/documentation/embed/start
-        
-        <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJa6qxsTKlYQ0RfaKUESvv9Do&key=AIzaSyB6LKf07unez8IAWLhqIhi-YszaeAKfQlA" allowfullscreen></iframe>
-    
-        <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJa6qxsTKlYQ0RfaKUESvv9Do&key=AIzaSyBQHMvprfhIpW6aFbjFTXhIVv0qbnVCYvk" allowfullscreen></iframe>
-        -->
-     
+         
       </div>
      
       </div>
@@ -249,20 +235,20 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/popper/popper.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom JavaScript for this theme -->
-    <script src="js/scrolling-nav.js"></script>
+    <script src="../js/scrolling-nav.js"></script>
 
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script src="validator.js"></script>
-        <script src="js/contact.js"></script>
+        <script src="../validator.js"></script>
+        <script src="../js/contact.js"></script>
 
   </body>
 

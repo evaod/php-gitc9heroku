@@ -9,31 +9,32 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Gris</title>
+    <title>Tienda</title>
     <!-- Used this example as a starting point for my home page and modified the skeleton and navbar
     https://startbootstrap.com/template-overviews/scrolling-nav/-->
     
     
    <!-- learned how to add an icon to the the tab here:
    https://stackoverflow.com/questions/11488960/how-do-i-put-my-websites-logo-to-be-the-icon-image-in-browser-tabs -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/icon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/icon.ico" />
    
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Font awesome -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
      <!-- Custom styles for this template -->
-    <link href="css/products.css" rel="stylesheet">
-   <link href="css/scroll.css" rel="stylesheet">
+    <link href="../css/products.css" rel="stylesheet">
+    <link href="../css/scroll.css" rel="stylesheet">
     
-         <!-- Custom styles for this template -->
-    <link href="css/mapstyle.json" rel="stylesheet">
-     <!--Font awesome icons -->
+         
+    
+   <!--Font awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <!--Javascript from https://codepen.io/nxworld/pen/OyRrGy-->
-
     
     
   </head>
@@ -48,8 +49,8 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
       <div class="container">
        
-      <a class="navbar-brand js-scroll-trigger" href="indexweb.html">
-      <img src="img/Logo_Interiors.png" width="200" height="80" alt="">
+      <a class="navbar-brand js-scroll-trigger" href="index.php">
+      <img src="../img/Logo_Interiors.png" width="200" height="80" alt="">
       </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -57,7 +58,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="indexweb.html">HOME</a>
+              <a class="nav-link js-scroll-trigger" href="index.php">HOME</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="products.html">PRODUCTS & SERVICES</a>
@@ -72,11 +73,15 @@
               <a class="nav-link js-scroll-trigger" href="financing.html">FINANCING</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="contact.html">CONTACT</a>
+              <a class="nav-link js-scroll-trigger" href="contact.php">CONTACT</a>
             </li>
+            
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="cart.php"><i class="fa fa-shopping-cart fa-lg"></i> CART</a> 
+              <div class="btn-group" role="group" aria-label="Basic example">
+              <a href="../index.php"> <button type="button" class="btn btn-light">ES</button></a>
+               <a href="index.php"><button type="button" class="btn  btn-light">EN</button></a>
               
+            </div>
             </li>
           </ul>
         </div>
@@ -85,51 +90,49 @@
 
    
    
-    <section id="section02" class="demo" style="background-image: url('img/gallery/home/gris75.jpg')">
-    	<h1>Cocina Gris</h1>
-    	<a href="#about"><span></span>Scroll</a>
+    <section id="section02" class="demo" style="background-image: url('../img/gallery/home/tienda75.jpg')">
+    	<h1>Cocina Tienda</h1>
+    	<a href="#header1"><span></span>Scroll</a>
   </section>
 
-
+<header class="bg-primary" id="header1">
+      
+        <div class="container ">
+       <a class="style" href ="index.php">HOME /</a>
+        <a class="style" href ="gallery.html">GALLERY /</a>
+        <a class="style active" href ="cocinaTienda.html">COCINA TIENDA</a>
+        <br>
+        </div>
+        
+      <div class="container text-center">
+  
+        <h1></h1></h1>
+        <p class="lead">The kitchen maximizes the use of pan drawers to the full. The pan drawer here is used as a larder storage space. Everything in the kitchen can be stored and retrieved from the wide variety of drawers included. 
+        The corner units ´lemans´ accessory maximises storage in an often underutilised space.  </p>
+      </div>
+    </header>
 
     <section id="about">
         
       <div class="container" >
-        
-          <div class="container text-center">
       
-       <div class="container">
-         </br>
-        </br>
-       <a class="style" href ="indexweb.html">HOME /</a>
-        <a class="style" href ="gallery.html">GALLERY /</a>
-        <a class="style active" href ="cocinaGris.html">COCINA GRIS</a>
-        </br>
-        </br>
-        </br>
-        </br>
-        </div>
-
-                
                 <!--start of edited code 
                 https://github.com/BlackrockDigital/startbootstrap-2-col-portfolio/blob/master/index.html-->
                 
                 <div class="row">
         <div class="col-lg-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="img/gallery/gris2.jpg" alt=""></a>
+            <a href="#"><img class="card-img-top" src="../img/gallery/tienda.jpg" alt=""></a>
            
           </div>
         </div>
         <div class="col-lg-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="img/gallery/home/gris75.jpg" alt=""></a>
+            <a href="#"><img class="card-img-top" src="../img/gallery/tienda2.jpg" alt=""></a>
             
           </div>
         </div>
-        
-        </p>
-              </div>
+       </div>
         <!--end of edited code   -->
       <!-- /.row -->
      
@@ -140,34 +143,23 @@
     <footer class="py-5 bg-light">
       <div class="container">
        
-        <p class="m-0 text-center text-black"> Interiors Mobles de Cuina Copyright &copy; 2017 -
+        <p class="m-0 text-center text-black"> Interiors Mobles de Cuina Copyright &copy; 2018 -
         interiors.carcaixent@gmail.com - 626006246 / 962434779 </p>
       </div>
       <!-- /.container -->
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/popper/popper.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom JavaScript for this theme -->
-    <script src="js/scrolling-nav.js"></script>
-    <script>
-        $(function() {
-    	$("a[href*=#]").on("click", function(e) {
-    		e.preventDefault();
-    		$("html, body").animate(
-    			{ scrollTop: $($(this).attr("href")).offset().top },
-    			500,
-    			"linear"
-    		);
-    	});
-    });
-        </script>
+    <script src="../js/scrolling-nav.js"></script>
+   
   </body>
 
 </html>

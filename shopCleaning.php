@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
   <head>
 
@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Cleaning agent</title>
+    <title>Cleaning agent </title>
     <!-- Used this example as a starting point for my home page and modified the skeleton and navbar
     https://startbootstrap.com/template-overviews/scrolling-nav/-->
     
@@ -54,24 +54,31 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.php">HOME</a>
+              <a class="nav-link js-scroll-trigger" href="index.php">INICIO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="products.html">PRODUCTS & SERVICES</a>
+              <a class="nav-link js-scroll-trigger" href="products.html">PRODUCTOS & SERVICIOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="shop.php">ONLINE SHOP</a>
+              <a class="nav-link js-scroll-trigger" href="shop.php">TIENDA ONLINE</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="gallery.html">GALLERY</a>
+              <a class="nav-link js-scroll-trigger" href="gallery.html">GALERÍA</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="financing.html">FINANCING</a>
+              <a class="nav-link js-scroll-trigger" href="financing.html">FINANCIACIÓN</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="contact.php">CONTACT</a>
+              <a class="nav-link js-scroll-trigger" href="contact.php">CONTACTO</a>
             </li>
-             
+           
+            <li class="nav-item">
+              <div class="btn-group" role="group" aria-label="Basic example">
+              <a href="index.php"> <button type="button" class="btn btn-light">ES</button></a>
+               <a href="en/index.php"><button type="button" class="btn  btn-light">EN</button></a>
+              
+            </div>
+            </li>
             <li class="nav-item">
               <form target="paypal" class="nav-link js-scroll-trigger" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
               <input type="hidden" name="cmd" value="_s-xclick">
@@ -90,8 +97,8 @@
     <header>
       
     <div class="container ">
-      <a class="style" href ="index.php">HOME /</a>
-      <a class="style active " href ="shop.php">ONLINE SHOP</a>
+      <a class="style" href ="index.php">INICIO /</a>
+      <a class="style active " href ="shop.php">TIENDA ONLINE</a>
       <br>
     </div>
     

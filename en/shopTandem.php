@@ -8,21 +8,21 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Carousel</title>
+    <title>Tandem</title>
     <!-- Used this example as a starting point for my home page and modified the skeleton and navbar
     https://startbootstrap.com/template-overviews/scrolling-nav/-->
     
     
     <!-- learned how to add an icon to the the tab here:
     https://stackoverflow.com/questions/11488960/how-do-i-put-my-websites-logo-to-be-the-icon-image-in-browser-tabs -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/icon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/icon.ico" />
      
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   
     <!-- Custom styles for this template -->
-    <link href="css/custom.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
        
     <!--Font awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -46,7 +46,7 @@
       <div class="container">
        
       <a class="navbar-brand js-scroll-trigger" href="index.php">
-      <img src="img/Logo_Interiors.png" width="200" height="80" alt="">
+      <img src="../img/Logo_Interiors.png" width="200" height="80" alt="">
       </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -71,15 +71,13 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="contact.php">CONTACT</a>
             </li>
-            
-            <li class="nav-item">
+             <li class="nav-item">
               <div class="btn-group" role="group" aria-label="Basic example">
-              <a href="index.php"> <button type="button" class="btn btn-light">ES</button></a>
-               <a href="en/index.php"><button type="button" class="btn  btn-light">EN</button></a>
+              <a href="../index.php"> <button type="button" class="btn btn-light">ES</button></a>
+               <a href="index.php"><button type="button" class="btn  btn-light">EN</button></a>
               
             </div>
             </li>
-             
             <li class="nav-item">
               <form target="paypal" class="nav-link js-scroll-trigger" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
               <input type="hidden" name="cmd" value="_s-xclick">
@@ -124,10 +122,11 @@
       //$pass = "";                         //Remember, there is NO password by default!
       //$db = "sample_db";                  //Your database name you want to connect to
     
+   //Production variables -  To use on Heroku ClearDB
     $host = "eu-cdbr-west-02.cleardb.net";
     $user = "b753690a4c189a";                   
     $pass = "4d3b8a01";                         
-    $db = "heroku_516c1a6c01766ca";    
+    $db = "heroku_516c1a6c01766ca";         
     
     // Create connection
             $conn = new mysqli($host, $user, $pass, $db);
@@ -141,12 +140,12 @@
       <div class="row my-4">
         <div class="col-lg-4">
           <!--<img class="img-fluid rounded" src="http://placehold.it/900x400" alt="">-->
-          <img class="img-fluid rounded" src="img/gallery/shop/carousel.jpg" alt="">
+          <img class="img-fluid rounded" src="../img/gallery/shop/lemans.jpg" alt="">
         </div>
         <!-- /.col-lg-8 -->
         <div class="col-lg-8">
           <h1><?php
-              $sql = "SELECT * FROM tblProducts WHERE product_id='7'";
+              $sql = "SELECT * FROM tblProducts WHERE product_id='11'";
               $result = $conn->query($sql);
           
               if ($result->num_rows > 0) {
@@ -163,7 +162,7 @@
               ?></h1>
               <h1></h1>
           <p><?php
-              $sql = "SELECT * FROM tblProducts WHERE product_id='7'";
+              $sql = "SELECT * FROM tblProducts WHERE product_id='11'";
               $result = $conn->query($sql);
           
               if ($result->num_rows > 0) {
@@ -178,7 +177,7 @@
               ?></p>
               
               <p><?php
-              $sql = "SELECT * FROM tblProducts WHERE product_id='7'";
+              $sql = "SELECT * FROM tblProducts WHERE product_id='11'";
               $result = $conn->query($sql);
           
               if ($result->num_rows > 0) {
@@ -192,23 +191,13 @@
                       }
                     $conn->close();
               ?></p>
-              
-         
+          
           <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
           <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="JDZ8CBGRH5FWC">
+          <input type="hidden" name="hosted_button_id" value="DFARHXLZ63S8L">
           <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
           <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
           </form>
-          
-          
-          <p>Test transaction: 1€</p>
-          <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="ERZ34B5N9BFZ4">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
 
 
 
@@ -240,15 +229,15 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/popper/popper.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom JavaScript for this theme -->
-    <script src="js/scrolling-nav.js"></script>
+    <script src="../js/scrolling-nav.js"></script>
 
   </body>
 

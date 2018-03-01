@@ -15,16 +15,16 @@
     
    <!-- learned how to add an icon to the the tab here:
    https://stackoverflow.com/questions/11488960/how-do-i-put-my-websites-logo-to-be-the-icon-image-in-browser-tabs -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/icon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/icon.ico" />
    
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
    
    
    
      <!-- Custom styles for this template -->
-      <link href="css/products.css" rel="stylesheet">
+      <link href="../css/products.css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
   </head>
@@ -36,8 +36,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!--complete bootstrap javascript-->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <!-- includes the Braintree JS client SDK -->
-    <script src="https://js.braintreegateway.com/web/dropin/1.9.3/js/dropin.min.js"></script>
     
     <!-- Navigation -->
     <!-- Learned about chaanging colour of text and background in navbar here
@@ -47,7 +45,7 @@
       <div class="container">
        
       <a class="navbar-brand js-scroll-trigger" href="index.php">
-      <img src="img/Logo_Interiors.png" width="200" height="80" alt="">
+      <img src="../img/Logo_Interiors.png" width="200" height="80" alt="">
       </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -55,32 +53,30 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index.php">INICIO</a>
+              <a class="nav-link js-scroll-trigger" href="index.php">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="products.html">PRODUCTOS & SERVICIOS</a>
+              <a class="nav-link js-scroll-trigger" href="products.html">PRODUCTS & SERVICES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="shop.php">TIENDA ONLINE</a>
+              <a class="nav-link js-scroll-trigger" href="shop.php">ONLINE SHOP</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="gallery.html">GALERÍA</a>
+              <a class="nav-link js-scroll-trigger" href="gallery.html">GALLERY</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="financing.html">FINANCIACIÓN</a>
+              <a class="nav-link js-scroll-trigger" href="financing.html">FINANCING</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="contact.php">CONTACTO</a>
+              <a class="nav-link js-scroll-trigger" href="contact.php">CONTACT</a>
             </li>
-           
+            
             <li class="nav-item">
               <div class="btn-group" role="group" aria-label="Basic example">
-              <a href="index.php"> <button type="button" class="btn btn-light">ES</button></a>
-               <a href="en/index.php"><button type="button" class="btn  btn-light">EN</button></a>
+              <a href="../index.php"> <button type="button" class="btn btn-light">ES</button></a>
+               <a href="index.php"><button type="button" class="btn  btn-light">EN</button></a>
               
             </div>
-            </li>
-          
             </li>
             <li class="nav-item">
               <form target="paypal" class="nav-link js-scroll-trigger" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
@@ -100,8 +96,8 @@
     <header class="bg-primary" id="productspadding">
       
         <div class="container ">
-       <a class="style" href ="index.php">INICIO /</a>
-        <a class="style active " href ="shop.html">TIENDA ONLINE</a>
+       <a class="style" href ="index.php">HOME /</a>
+        <a class="style active " href ="shop.html">ONLINE SHOP</a>
         <br>
         </div>
         
@@ -109,9 +105,8 @@
       
        
       
-        <h1>Tienda online</h1>
-        <p class="lead"> Echa un vistazo para los accesorios perfectos para tu cocina
-       <br>
+        <h1>Online Shop</h1>
+        <p class="lead"> Browse to find the perfect accessories to complement your kitchen <br>
 
 </p>
       </div>
@@ -156,7 +151,7 @@
     <!--First item - Lemans-->
         <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card">
-           <a href="shopLemans.php"><img class="card-img-top" src="img/gallery/shop/lemans.jpg" alt=""></a>
+           <a href="shopLemans.php"><img class="card-img-top" src="../img/gallery/shop/lemans.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <?php
@@ -201,7 +196,7 @@
     
         <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card">
-           <a href="shopCarousel.php"><img class="card-img-top" src="img/gallery/shop/carousel.jpg" alt=""></a>
+           <a href="shopCarousel.php"><img class="card-img-top" src="../img/gallery/shop/carousel.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <?php
@@ -244,7 +239,7 @@
         
         <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card">
-           <a href="shopMagic.php"><img class="card-img-top" src="img/gallery/shop/magic.jpg" alt=""></a>
+           <a href="shopMagic.php"><img class="card-img-top" src="../img/gallery/shop/magic.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <?php
@@ -288,7 +283,7 @@
         
         <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card">
-           <a href="shopCleaning.php"><img class="card-img-top" src="img/gallery/shop/cleaning.jpg" alt=""></a>
+           <a href="shopCleaning.php"><img class="card-img-top" src="../img/gallery/shop/cleaning.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <?php
@@ -334,7 +329,7 @@
         
         <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card">
-           <a href="shopComfort.php"><img class="card-img-top" src="img/gallery/shop/comfort.jpg" alt=""></a>
+           <a href="shopComfort.php"><img class="card-img-top" src="../img/gallery/shop/comfort.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <?php
@@ -380,7 +375,7 @@
         
         <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card">
-           <a href="shopConvoy.php"><img class="card-img-top" src="img/gallery/shop/convoy.jpg" alt=""></a>
+           <a href="shopConvoy.php"><img class="card-img-top" src="../img/gallery/shop/convoy.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <?php
@@ -426,7 +421,7 @@
         
         <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card">
-           <a href="shopTandem.php"><img class="card-img-top" src="img/gallery/shop/tandem.jpg" alt=""></a>
+           <a href="shopTandem.php"><img class="card-img-top" src="../img/gallery/shop/tandem.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <?php
@@ -486,15 +481,15 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/popper/popper.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom JavaScript for this theme -->
-    <script src="js/scrolling-nav.js"></script>
+    <script src="../js/scrolling-nav.js"></script>
 
   </body>
 

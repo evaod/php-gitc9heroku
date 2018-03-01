@@ -9,37 +9,31 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Kitchen furniture</title>
+    <title>Products and services</title>
     <!-- Used this example as a starting point for my home page and modified the skeleton and navbar
     https://startbootstrap.com/template-overviews/scrolling-nav/-->
     
     
    <!-- learned how to add an icon to the the tab here:
    https://stackoverflow.com/questions/11488960/how-do-i-put-my-websites-logo-to-be-the-icon-image-in-browser-tabs -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/icon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/icon.ico" />
    
-   <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-   
-   
+    
+
      <!-- Custom styles for this template -->
-    <link href="css/products.css" rel="stylesheet">
-     <!--Font awesome icons -->
+    <link href="../css/products.css" rel="stylesheet">
+    
+    <!--Font awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
-   
+    
   </head>
  
  
   <body id="page-top">
-   <!--jquery-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   <!--javascript-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link href="vendor/jquery/jquery.min.js" rel="stylesheet">
-   
-    
+
     <!-- Navigation -->
     <!-- Learned about chaanging colour of text and background in navbar here
           https://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap-3-->
@@ -48,7 +42,7 @@
       <div class="container">
        
       <a class="navbar-brand js-scroll-trigger" href="index.php">
-      <img src="img/Logo_Interiors.png" width="200" height="80" alt="">
+      <img src="../img/Logo_Interiors.png" width="200" height="80" alt="">
       </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -73,22 +67,14 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="contact.php">CONTACT</a>
             </li>
+            
             <li class="nav-item">
-              <div class="btn-group" role="group" aria-label="...">
-              <button type="button" class="btn btn-sm">ES</button>
-              <button type="button" class="btn btn-sm">EN</button>
+              <div class="btn-group" role="group" aria-label="Basic example">
+              <a href="../index.php"> <button type="button" class="btn btn-light">ES</button></a>
+               <a href="index.php"><button type="button" class="btn  btn-light">EN</button></a>
               
             </div>
             </li>
-            
-            <li class="nav-item">
-               <select name='lang' class='language-select'>
-                <option value='en'>English</option>
-                <option value='sp'>Spanish</option>
-                </select>
-            </li>
-               
-         
           </ul>
         </div>
       </div>
@@ -98,132 +84,116 @@
       
         <div class="container ">
        <a class="style" href ="index.php">HOME /</a>
-        <a class="style " href ="products.html">PRODUCTS /</a>
-        <a class="style active" href ="kitchenFurniture.html">KITCHEN FURNITURE</a>
+        <a class="style active " href ="products.html">PRODUCTS</a>
         <br>
-        
-        
-    <select name='lang' class='language-select'>
-    <option value='en'>English</option>
-    <option value='es'>Spanish</option>
-    </select>
-
-    <!-- this wont be shown to the user + google will ignore it because it's a script  -->
-    <script type="text/html-template" lang='es'>
-        <strong>hola</strong>, lorem ipsum dolor
-    </script>
-    <script type="text/html-template" lang='en'>
-        <strong>hello</strong>, lorem ipsum dolor
-    </script>
-
-
-
-      <script type="text/javascript">
-      $(document).ready(function() {
-          $('select.language-select').on('change', function(evt) {
-              var selectedLanguage = $(this).find('option:selected').val(),
-                  articleHtml = $('script[type="text/html-template"][lang=' + selectedLanguage + ']').html(),
-                  article = $('div.article');
-              article.html(articleHtml);
-          });
-      });
-      </script>
-
         </div>
         
-        
-        
-     <button onclick="myFunction()">Click Me</button>
-
-
-
-
-
-<script type="text/javascript">
-  function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.innerHTML === "Hello") {
-    x.innerHTML = "Swapped text!";
-  } else {
-    x.innerHTML = "Hello";
-  }
-}
-</script>
-     
-     
-     
-     
-     
-     
-     
-        
-     <div class="container text-center ">
+      <div class="container text-center">
       
        
+      
+        <h1>Products</h1>
+        <p class="lead"> Personalised 3D design service to maximise the possibilities and space available, creating individualised yet functional solutions.<br>
+        Come and explore the variety of storage solutions available, designed to make your family’s life easier.<br>
+        Avail of our 3D planning service to avoid making expensive mistakes. It includes:<br>
+        </p>
+      </div>
+      
+    <div class="container mx-auto lead" id="bulletpoints">
+      <li>Site survey and brief</li>
+      <li>Planning including floor plan and elevations</li>
+      <li>Service plans</li>
+      <li>3D colour rendered images of your future kitchen</li>
+  
+     </div>
+   
+  
+     
     </header>
     
-     <section id="about">
+    <section id="about">
         
       <div class="container" id="squares">
         
-          <!-- Page Features -->
-      <div class="row text-center ">
+          <!-- Page Features-->
+          <div class="row text-center ">
+      
 
         <div class="col-lg-4 col-md-6 mb-4 img-hover ">
           <div class="card">
-            <img href="index.php" class="card-img-top img-responsive img-rounded" src="img/products/kitchenfurniture.jpg" alt="">
+            <a href="kitchenFurniture.html"><img class="card-img-top img-responsive img-rounded" src="../img/products/kitchenfurniture.jpg" alt=""></a>
             
-             <div class="card-body" id="cardproducts">
+          <div class="card-body" id="cardproducts">
               <h5 class="card-title">
-                <p><div id="myDIV">Hello</div></p>
+                <p>Kitchen furniture</p>
               </h5>
              
             </div>
           </div>
         </div>
 
-<!-- original image taken with permission from this website :
-https://www.parador.eu/products/laminate-flooring/trendtime/globetrotter-modern-light-1601429 -->
+        <!-- original image taken with permission from this website :
+        https://www.parador.eu/products/laminate-flooring/trendtime/globetrotter-modern-light-1601429 -->
         <div class="col-lg-4 col-md-6 mb-4 img-hover ">
           <div class="card ">
-            <img class="card-img-top img-responsive img-rounded" src="img/products/classical.jpg" alt="parquet">
+            <a href="counterTops.html"><img class="card-img-top img-responsive img-rounded" src="../img/products/counter.jpg" alt="parquet"></a>
+           <div class="card-body" id="cardproducts">
+              <h5 class="card-title">
+                <p>Counter tops</p>
+              </h5>
+             
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 img-hover ">
+          <div class="card ">
+            <a href="wardrobes.html"><img class="card-img-top img-responsive img-rounded" src="../img/products/wardrobes.jpg" alt=""></a>
            
             <div class="card-body" id="cardproducts">
               <h5 class="card-title">
-                <p>Classical</p>
+                <p>Wardrobes</p>
               </h5>
              
             </div>
-           
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 mb-4 img-hover ">
-          <div class="card ">
-            <img href="index.php" class="card-img-top img-responsive img-rounded" src="img/products/accessories.jpg" alt="">
-          
+ <div class="container" id="squares2">
+     
+     <div class="row text-center ">
+       
+        <div class="col-lg-6 col-md-6 mb-4 img-hover ">
+          <div class="card"  >
+            <a href="parquet.html"><img href="index.php" class="card-img-top img-responsive img-rounded" src="../img/products/parquet.png" alt=""></a>
            <div class="card-body" id="cardproducts">
               <h5 class="card-title">
-                <p>Accessories</p>
+                <p>Parquet</p>
               </h5>
-             <!-- <p class="card-text"></p>-->
+             
             </div>
             
-            
-          </div>
-        </div>
-
-
-     
+            </div>
+         </div>
         
-       
+          
+        <div class="col-lg-6 col-md-6 mb-4 img-hover ">
+          <div class="card"  >
+            <a href="electricalAppliances.html"><img href="index.php" class="card-img-top img-responsive img-rounded" src="../img/products/electrical.jpg" alt=""></a>
+           <div class="card-body" id="cardproducts">
+              <h5 class="card-title">
+                <p>Electrical appliances</p>
+              </h5>
+             
+            </div>
+            
+            </div>
+         </div>
+         
+        
  <!--End of modified code-->
       </div>
       <!-- /.row -->
-
-      
-      
-      
       </div>
     </section>
 
@@ -239,15 +209,15 @@ https://www.parador.eu/products/laminate-flooring/trendtime/globetrotter-modern-
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/popper/popper.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom JavaScript for this theme -->
-    <script src="js/scrolling-nav.js"></script>
+    <script src="../js/scrolling-nav.js"></script>
 
   </body>
 
