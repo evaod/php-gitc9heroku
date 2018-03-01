@@ -141,23 +141,23 @@
             amount: "Cantidad a financiar",
             rate: "Interés (APR)",
             rate_compare: "Comparison Rate",
-            term: "Pazo"
+            term: "Plazo"
         },
-        button_label: "Calcular",
+        button_label: "Calculate",
         field_comments: {
             amount: "",
             rate: "",
             rate_compare: "",
             term: "Formato: 12m, 36m..."
         },
-        response_output_div: ".resultados",
+        response_output_div: ".results",
         response_basic: 
             '<p><strong>Pago mensual:</strong><br />€%payment_amount%</p>'+
-            '<p><strong>Numbero de pagos:</strong><br />%num_payments%</p>'+
+            '<p><strong>Number de pagos:</strong><br />%num_payments%</p>'+
             '<p><strong>Pagos totales:</strong><br />€%total_payments%</p>'+
             '<p><strong>Interés total:</strong><br />€%total_interest%</p>',
         response_compare: '<p class="total-savings">Save €%savings% in interest!</p>',
-        error_text: '<p class="error">Por favor, rellene todos los campo.</p>',
+        error_text: '<p class="error">Please fill in all fields.</p>',
         callback: function ( elem, data ){}
     };
 
@@ -336,9 +336,9 @@
             var output_content = '<table class="accrue-amortization">'+
                     '<thead><tr>'+
                     '<th class="accrue-payment-number">#</th>'+
-                    '<th class="accrue-payment-amount">Cantidad a pagar</th>'+
-                    '<th class="accrue-total-interest">Interés total</th>'+
-                    '<th class="accrue-total-payments">Pagos totales</th>'+
+                    '<th class="accrue-payment-amount">Payment Amt.</th>'+
+                    '<th class="accrue-total-interest">Total Interest</th>'+
+                    '<th class="accrue-total-payments">Total Payments</th>'+
                     '<th class="accrue-balance">Balance</th>'+
                     '</tr></thead><tbody>',
                 interest_per_payment = loan_info.payment_amount-(loan_info.original_amount/loan_info.num_payments),

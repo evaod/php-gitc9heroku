@@ -166,7 +166,7 @@
         <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card">
              <a href="kitchenFurniture.html">
-            <img  class="card-img-top img-responsive img-rounded" src="img/kitchensquare.jpg" alt="">
+            <img  class="card-img-top img-responsive img-rounded" src="img/escocinas.jpg" alt="">
             </a>
           
           </div>
@@ -177,7 +177,7 @@ https://www.parador.eu/products/laminate-flooring/trendtime/globetrotter-modern-
         <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card">
              <a href="parquet.html">
-            <img  class="card-img-top img-responsive img-rounded" src="img/parquet.jpg" alt="parquet">
+            <img  class="card-img-top img-responsive img-rounded" src="img/esparquet.jpg" alt="parquet">
            </a>
           </div>
         </div>
@@ -185,7 +185,7 @@ https://www.parador.eu/products/laminate-flooring/trendtime/globetrotter-modern-
         <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card ">
              <a href="wardrobes.html">
-            <img class="card-img-top img-responsive img-rounded" src="img/wardrobes.jpg" alt="">
+            <img class="card-img-top img-responsive img-rounded" src="img/esarmarios.jpg" alt="">
            </a>
             
           </div>
@@ -194,7 +194,7 @@ https://www.parador.eu/products/laminate-flooring/trendtime/globetrotter-modern-
         <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card ">
              <a href="electricalAppliances.html">
-            <img class="card-img-top img-responsive img-rounded" src="img/electrical.jpg" alt="">
+            <img class="card-img-top img-responsive img-rounded" src="img/eselectro.jpg" alt="">
            </a>
             
           </div>
@@ -234,7 +234,7 @@ https://www.parador.eu/products/laminate-flooring/trendtime/globetrotter-modern-
   <div class="col-md-6">
   
          <!--<div class="col-lg-8 mx-auto">-->
-            <h1>Contact us</h1>
+            <h1>Contáctenos</h1>
             
             <p class= "lead">Interiors Mobles de Cuina<br>
             46740, Carcaixent<br>

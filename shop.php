@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
   <head>
 
@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Online Shop</title>
+    <title>Tienda online</title>
     <!-- Used this example as a starting point for my home page and modified the skeleton and navbar
     https://startbootstrap.com/template-overviews/scrolling-nav/-->
     
