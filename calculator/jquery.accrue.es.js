@@ -153,7 +153,7 @@
         response_output_div: ".results",
         response_basic: 
             '<p><strong>Pago mensual:</strong><br />€%payment_amount%</p>'+
-            '<p><strong>Number de pagos:</strong><br />%num_payments%</p>'+
+            '<p><strong>Número de pagos:</strong><br />%num_payments%</p>'+
             '<p><strong>Pagos totales:</strong><br />€%total_payments%</p>'+
             '<p><strong>Interés total:</strong><br />€%total_interest%</p>',
         response_compare: '<p class="total-savings">Save €%savings% in interest!</p>',

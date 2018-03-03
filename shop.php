@@ -110,7 +110,7 @@
        
       
         <h1>Tienda online</h1>
-        <p class="lead"> Echa un vistazo para los accesorios perfectos para tu cocina
+        <p class="lead"> Echa un vistazo a los accesorios perfectos para tu cocina
        <br>
 
 </p>

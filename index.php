@@ -141,8 +141,8 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h1>Interiors mobles de Cuina</h1>
-            <p class="lead">La cocina es el centro de la casa, el centro de la vida familiar, un lugar donde sentirse creativo y a gusto. <br>
-            Diseñamos cocinas e interiores funcionales y adaptados a las necesidades de cada individuo. Ayudamos a crear espacios para hacer tu vida más fácil.
+            <p class="lead">La cocina es el centro del hogar, de la vida familiar, un lugar donde sentirse a gusto y dónde poder dar rienda suelta a nuestra imaginación. <br>
+            Diseñamos cocinas e interiores funcionales y adaptados a las necesidades individuales. Ayudamos a crear espacios para hacer su vida más fácil.
               
               </p>
             <ul>
