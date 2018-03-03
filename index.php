@@ -141,8 +141,10 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h1>Interiors mobles de Cuina</h1>
-            <p class="lead">The kitchen is the heart of any home, the centre of family life, a place to feel creative and alive.<br> 
-            We design kitchens and interiors to be functional and tailored to the needs of every individual. We help to create spaces that make your life easier.</p>
+            <p class="lead">La cocina es el centro de la casa, el centro de la vida familiar, un lugar donde sentirse creativo y a gusto. <br>
+            Diseñamos cocinas e interiores funcionales y adaptados a las necesidades de cada individuo. Ayudamos a crear espacios para hacer tu vida más fácil.
+              
+              </p>
             <ul>
              <!-- <li></li>-->
             </ul>

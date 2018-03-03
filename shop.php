@@ -184,7 +184,7 @@
                           // output data of each row
                           while($row = $result->fetch_assoc()) {
                               #echo $row["title"]
-                              echo $row["description"];
+                              echo $row["descripcion"];
                           }
                       } else {
                           echo "0 results";
@@ -228,7 +228,7 @@
                           // output data of each row
                           while($row = $result->fetch_assoc()) {
                               #echo $row["title"]
-                              echo $row["description"];
+                              echo $row["descripcion"];
                           }
                       } else {
                           echo "0 results";
@@ -271,7 +271,7 @@
                           // output data of each row
                           while($row = $result->fetch_assoc()) {
                               #echo $row["title"]
-                              echo $row["description"];
+                              echo $row["descripcion"];
                           }
                       } else {
                           echo "0 results";
@@ -315,7 +315,7 @@
                           // output data of each row
                           while($row = $result->fetch_assoc()) {
                               #echo $row["title"]
-                              echo $row["description"];
+                              echo $row["descripcion"];
                           }
                       } else {
                           echo "0 results";
@@ -361,7 +361,7 @@
                           // output data of each row
                           while($row = $result->fetch_assoc()) {
                               #echo $row["title"]
-                              echo $row["description"];
+                              echo $row["descripcion"];
                           }
                       } else {
                           echo "0 results";
@@ -407,7 +407,7 @@
                           // output data of each row
                           while($row = $result->fetch_assoc()) {
                               #echo $row["title"]
-                              echo $row["description"];
+                              echo $row["descripcion"];
                           }
                       } else {
                           echo "0 results";
@@ -453,7 +453,7 @@
                           // output data of each row
                           while($row = $result->fetch_assoc()) {
                               #echo $row["title"]
-                              echo $row["description"];
+                              echo $row["descripcion"];
                           }
                       } else {
                           echo "0 results";
