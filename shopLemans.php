@@ -60,7 +60,7 @@
               <a class="nav-link js-scroll-trigger" href="products.html">PRODUCTOS </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="shop.php">TIENDA ONLINE</a>
+              <a class="nav-link js-scroll-trigger" href="shop.php">TIENDA</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="gallery.html">GALERÍA</a>
