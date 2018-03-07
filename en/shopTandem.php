@@ -140,7 +140,7 @@
       <div class="row my-4">
         <div class="col-lg-4">
           <!--<img class="img-fluid rounded" src="http://placehold.it/900x400" alt="">-->
-          <img class="img-fluid rounded" src="../img/gallery/shop/lemans.jpg" alt="">
+          <img class="img-fluid rounded" src="../img/gallery/shop/tandem.jpg" alt="">
         </div>
         <!-- /.col-lg-8 -->
         <div class="col-lg-8">
