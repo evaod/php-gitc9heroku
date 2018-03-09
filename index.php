@@ -165,12 +165,11 @@
     </section>
 
     <section id="services" class="bg-light">
-      <div class="container">
+      <div class="container" style="padding-left:5%;">
          <!-- Page Features -->
       <div class="row text-center">
 
- <!-- Found code for little card boxes with pictures at :
- https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/master/index.html 
+ <!-- Found code for little card boxes with pictures at : https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/master/index.html 
  Modified code starts here-->
 
         <!-- Page Features -->
@@ -178,7 +177,7 @@
 
         <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card">
-             <a href="kitchenFurniture.html">
+             <a href="kitchenFurniture.html" style="height:100%;">
             <img  class="card-img-top img-responsive img-rounded" src="img/escocinas.jpg" alt="">
             </a>
           
@@ -189,7 +188,7 @@
 https://www.parador.eu/products/laminate-flooring/trendtime/globetrotter-modern-light-1601429 -->
         <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card">
-             <a href="parquet.html">
+             <a href="parquet.html" style="height:100%;">
             <img  class="card-img-top img-responsive img-rounded" src="img/esparquet.jpg" alt="parquet">
            </a>
           </div>
@@ -197,7 +196,7 @@ https://www.parador.eu/products/laminate-flooring/trendtime/globetrotter-modern-
 
         <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card ">
-             <a href="wardrobes.html">
+             <a href="wardrobes.html" style="height:100%;">
             <img class="card-img-top img-responsive img-rounded" src="img/esarmarios.jpg" alt="">
            </a>
             
@@ -206,7 +205,7 @@ https://www.parador.eu/products/laminate-flooring/trendtime/globetrotter-modern-
 
         <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card ">
-             <a href="electricalAppliances.html">
+             <a href="electricalAppliances.html" style="height:100%;">
             <img class="card-img-top img-responsive img-rounded" src="img/eselectro.jpg" alt="">
            </a>
             
@@ -216,6 +215,7 @@ https://www.parador.eu/products/laminate-flooring/trendtime/globetrotter-modern-
       </div>
       <!-- /.row -->
       </div>
+       
     </section>
 
 
@@ -244,7 +244,7 @@ https://www.parador.eu/products/laminate-flooring/trendtime/globetrotter-modern-
      
     
   </div>
-  <div class="col-md-6">
+  <div class="col-md-6" style="padding-left:8%;">
   
          <!--<div class="col-lg-8 mx-auto">-->
             <h1>Contáctenos</h1>

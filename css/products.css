@@ -31,9 +31,7 @@ section {
 }
 
 .container2{
-    
    padding: 500px 0;
-  
 }
 
 /*End of modified sample stylesheet*/
@@ -138,11 +136,6 @@ h5{
  
 }
 
-
-
-
-
-
 .footer{
     padding-left: 30%;
     
@@ -174,4 +167,6 @@ h5{
     
     max-height: 60px!important;
 }
+
+
 

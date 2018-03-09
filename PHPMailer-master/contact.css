@@ -44,21 +44,6 @@ https://stackoverflow.com/questions/37883498/how-to-change-navbar-bootstrap-heig
 }
 
 
-/*! This adds padding to the left side of the contact section of the homepage */
-#contact{
-  padding-left: 10%;
-  
-}
-
-/*! This is where I learned how to change the width and hight of my slideshow
-https://stackoverflow.com/questions/13391566/twitter-bootstrap-carousel-different-height-images-cause-bouncing-arrows 
-  width: auto;
-*/
-.carousel-item {
-  width: 800px;
-  height: 300px;
-  max-height: 300px;
-}
 
 /*!This is how I made my slideshow a fixed width. Learned how to do it here:
 https://stackoverflow.com/questions/2279519/how-to-get-main-div-container-to-align-to-centre*/
@@ -69,30 +54,6 @@ https://stackoverflow.com/questions/2279519/how-to-get-main-div-container-to-ali
 }
 
 
-/*! This is the cs code to make the picture links at the bottom of the homw page zoom on hover.
-Modified original code from this site:
-https://www.codeply.com/go/JuADMG3eTG/bootstrap-image-hover-css-zoom-scale
-zoom on hover*/
-.img-hover img {
-    -webkit-transition: all .3s ease; /* Safari and Chrome */
-  	-moz-transition: all .3s ease; /* Firefox */
-  	-o-transition: all .3s ease; /* IE 9 */
-  	-ms-transition: all .3s ease; /* Opera */
-  	transition: all .3s ease;
-  	position:relative;
-}
-
-
-.img-hover img:hover {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform:translateZ(0) scale(1.06); /* Safari and Chrome */
-    -moz-transform:scale(1.10); /* Firefox */
-    -ms-transform:scale(1.10); /* IE 9 */
-    -o-transform:translatZ(0) scale(1.10); /* Opera */
-    transform:translatZ(0) scale(1.10);
-}
-  /*end of modified code for zoom on hover*/
 
 
 /*style for font*/
@@ -123,13 +84,6 @@ h5{
 }
 
 
-/*Centres form on financing page Learned how to change position of my form here:
-https://stackoverflow.com/questions/20853066/how-to-center-form-in-bootstrap-3*/
-.center-div{
-  margin: 0 auto;
-  width:400px /* value of your choice which suits your alignment */
-}
-
 
 
 /* fit to screen -
@@ -139,10 +93,11 @@ padding: 0;
 margin: 0;
 }
 
-div {
-width: 100%;
-height: 100%;
+
+
+#contact1{
+  width:100%;
+ 
+  
+   padding: 50px 100px 5px;
 }
-
-
-

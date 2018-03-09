@@ -52,7 +52,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
     <title>Contact</title>
     <!-- Used this example as a starting point for my home page and modified the skeleton and navbar
     https://startbootstrap.com/template-overviews/scrolling-nav/-->
@@ -66,12 +67,12 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     
-    
- <link href='css/custom.css' rel='stylesheet' type='text/css'>
-    
-   <link href='css/products.css' rel='stylesheet' type='text/css'>
+     <link href='../PHPMailer-master/contact.css' rel='stylesheet' type='text/css'>
      <!--Font awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="http://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     
   </head>
  
@@ -160,7 +161,7 @@
   	<div class="panel panel-default">
   		<div class="panel-heading">
     	</div>
-    	<div class="panel-body">
+    	<div class="panel-body" >
     	<form name="form1" id="form1" action="" method="post">
     			<fieldset>
     			  <input type="text" class="form-control" name="fullname" placeholder="Nombre" />

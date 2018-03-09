@@ -67,9 +67,9 @@
    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     
     
- <link href='../css/custom.css' rel='stylesheet' type='text/css'>
+   <link href='../PHPMailer-master/contact.css' rel='stylesheet' type='text/css'>
     
-   <link href='../css/products.css' rel='stylesheet' type='text/css'>
+  
      <!--Font awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
@@ -146,10 +146,6 @@
      <section id="contact1">
     <div class="modal-body row">
         
-     
-      
-      
-      
        <div class="col-md-6"  >
           <!-- Start of modified code. Tutorial from:
          https://github.com/IceTimux/SMTP-Bootstrap-Contact-Form-->

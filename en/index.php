@@ -153,8 +153,11 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h1>Interiors mobles de Cuina</h1>
-            <p class="lead">The kitchen is the heart of any home, the centre of family life, a place to feel creative and alive.<br> 
-            We design kitchens and interiors to be functional and tailored to the needs of every individual. We help to create spaces that make your life easier.</p>
+            <p class="lead">The kitchen is the heart of any home, the centre of family life, a place to feel creative and alive.<br><br>
+            We design kitchens and interiors to be functional and tailored to the needs of every individual. We help to create spaces that make your life easier.<br><br>
+            
+            Our commercial activity is not just restricted to kitchens, worktops and accessories. We can provide all aspects of interior carpentry and joinery including made to measure wardrobes and storage, internal doors, and parquet.
+            </p>
             <ul>
              <!-- <li></li>-->
             </ul>
@@ -164,20 +167,20 @@
     </section>
 
     <section id="services" class="bg-light">
-      <div class="container">
+      <div class="container" style="padding-left:5%;">
          <!-- Page Features -->
       <div class="row text-center">
 
- <!-- Found code for little card boxes with pictures at :
- https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/master/index.html 
- Modified code starts here-->
+       <!-- Found code for little card boxes with pictures at :
+       https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/master/index.html 
+       Modified code starts here-->
 
         <!-- Page Features -->
       <div class="row text-center">
 
         <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card">
-             <a href="kitchenFurniture.html">
+             <a href="kitchenFurniture.html" style="height:100%;">
             <img  class="card-img-top img-responsive img-rounded" src="../img/kitchensquare.jpg" alt="">
             </a>
           
@@ -188,7 +191,7 @@
 https://www.parador.eu/products/laminate-flooring/trendtime/globetrotter-modern-light-1601429 -->
         <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card">
-             <a href="parquet.html">
+             <a href="parquet.html" style="height:100%;">
             <img  class="card-img-top img-responsive img-rounded" src="../img/parquet.jpg" alt="parquet">
            </a>
           </div>
@@ -196,7 +199,7 @@ https://www.parador.eu/products/laminate-flooring/trendtime/globetrotter-modern-
 
         <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card ">
-             <a href="wardrobes.html">
+             <a href="wardrobes.html" style="height:100%;">
             <img class="card-img-top img-responsive img-rounded" src="../img/wardrobes.jpg" alt="">
            </a>
             
@@ -205,7 +208,7 @@ https://www.parador.eu/products/laminate-flooring/trendtime/globetrotter-modern-
 
         <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card ">
-             <a href="electricalAppliances.html">
+             <a href="electricalAppliances.html" style="height:100%;">
             <img class="card-img-top img-responsive img-rounded" src="../img/electrical.jpg" alt="">
            </a>
             
@@ -224,7 +227,6 @@ https://www.parador.eu/products/laminate-flooring/trendtime/globetrotter-modern-
 
     <section id="contact">
      <div class="modal-body row">
-       
         
   <!-- This is where I learned how to divide the page into two columns:
   https://stackoverflow.com/questions/31584207/how-to-divide-a-web-in-2-columns-using-bootstrap
@@ -232,18 +234,14 @@ https://www.parador.eu/products/laminate-flooring/trendtime/globetrotter-modern-
   I was having trouble making the map align left and this was a good fix:
   https://stackoverflow.com/questions/35163164/how-to-center-content-in-bootstrap-column
   -->
-  
-  
   <div class="col-md-6"  align="right">
-    
-   
     
      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50964.527805849095!2d-0.4749904734183495!3d39.138237627268595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61a532b035abc5%3A0xc4bdbe1c10862822!2sInteriors+Mobles+de+Cuina!5e0!3m2!1sen!2sie!4v1508183679338" 
      width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
      
     
   </div>
-  <div class="col-md-6">
+  <div class="col-md-6" style="padding-left:8%;">
   
          <!--<div class="col-lg-8 mx-auto">-->
             <h1>Contact us</h1>

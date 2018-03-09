@@ -151,7 +151,7 @@
     <!--First item - Lemans-->
         <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card">
-           <a href="shopLemans.php"><img class="card-img-top" src="../img/gallery/shop/lemans.jpg" alt=""></a>
+           <a href="shopLemans.php" style="height:50%;"><img class="card-img-top" src="../img/gallery/shop/lemans.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <?php
@@ -196,7 +196,8 @@
     
         <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card">
-           <a href="shopCarousel.php"><img class="card-img-top" src="../img/gallery/shop/carousel.jpg" alt=""></a>
+           <a href="shopCarousel.php" style="height:50%;">
+             <img class="card-img-top img-responsive img-rounded" src="../img/gallery/shop/carousel.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <?php
@@ -239,7 +240,8 @@
         
         <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card">
-           <a href="shopMagic.php"><img class="card-img-top" src="../img/gallery/shop/magic.jpg" alt=""></a>
+           <a href="shopMagic.php" style="height:50%;">
+             <img class="card-img-top img-responsive img-rounded" src="../img/gallery/shop/magic.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <?php
@@ -283,7 +285,8 @@
         
         <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card">
-           <a href="shopCleaning.php"><img class="card-img-top" src="../img/gallery/shop/cleaning.jpg" alt=""></a>
+           <a href="shopCleaning.php" style="height:50%;">
+             <img class="card-img-top img-responsive img-rounded" src="../img/gallery/shop/cleaning.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <?php
@@ -329,7 +332,8 @@
         
         <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card">
-           <a href="shopComfort.php"><img class="card-img-top" src="../img/gallery/shop/comfort.jpg" alt=""></a>
+           <a href="shopComfort.php" style="height:50%;">
+             <img class="card-img-top img-responsive img-rounded" src="../img/gallery/shop/comfort.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <?php
@@ -375,7 +379,8 @@
         
         <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card">
-           <a href="shopConvoy.php"><img class="card-img-top" src="../img/gallery/shop/convoy.jpg" alt=""></a>
+           <a href="shopConvoy.php" style="height:50%;">
+             <img class="card-img-top img-responsive img-rounded" src="../img/gallery/shop/convoy.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <?php
@@ -421,7 +426,8 @@
         
         <div class="col-lg-3 col-md-6 mb-4 img-hover">
           <div class="card">
-           <a href="shopTandem.php"><img class="card-img-top" src="../img/gallery/shop/tandem.jpg" alt=""></a>
+           <a href="shopTandem.php" style="height:50%;">
+             <img class="card-img-top img-responsive img-rounded" src="../img/gallery/shop/tandem.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <?php
