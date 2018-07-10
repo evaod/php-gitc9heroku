@@ -27,15 +27,13 @@ section {
   background-color: #e0ebeb!important;
  
 }
-
 .bg-light{
    background-color: #e0ebeb!important;
   
 }
 
 
-/*!Learned how to change the height of the navbar here:
-https://stackoverflow.com/questions/37883498/how-to-change-navbar-bootstrap-height-and-make-the-text-keep-in-the-middle */
+/*!Learned how to change the height of the navbar here: https://stackoverflow.com/questions/37883498/how-to-change-navbar-bootstrap-height-and-make-the-text-keep-in-the-middle */
 
 #mainNav{
     opacity: 0.85;  
@@ -69,9 +67,8 @@ https://stackoverflow.com/questions/2279519/how-to-get-main-div-container-to-ali
 }
 
 
-/*! This is the cs code to make the picture links at the bottom of the homw page zoom on hover.
-Modified original code from this site:
-https://www.codeply.com/go/JuADMG3eTG/bootstrap-image-hover-css-zoom-scale
+/*! This is the cs code to make the picture links at the bottom of the home page zoom on hover.
+Modified original code from this site:https://www.codeply.com/go/JuADMG3eTG/bootstrap-image-hover-css-zoom-scale
 zoom on hover*/
 .img-hover img {
     -webkit-transition: all .3s ease; /* Safari and Chrome */
@@ -81,8 +78,6 @@ zoom on hover*/
   	transition: all .3s ease;
   	position:relative;
 }
-
-
 .img-hover img:hover {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -115,7 +110,6 @@ h5{
     padding: 12px 0 6px;
     list-style: none;
     font-family: LatoWeb,Lato,sans-serif;
- 
 }
 
 .style.active, .style a:hover {
@@ -123,14 +117,12 @@ h5{
 }
 
 
-/*Centres form on financing page Learned how to change position of my form here:
+/*Centres form on financing page. Learned how to change position of my form here:
 https://stackoverflow.com/questions/20853066/how-to-center-form-in-bootstrap-3*/
 .center-div{
   margin: 0 auto;
-  width:400px /* value of your choice which suits your alignment */
+  width:400px;
 }
-
-
 
 /* fit to screen -
 https://www.codecademy.com/en/forum_questions/532619b28c1ccc0cac002730*/

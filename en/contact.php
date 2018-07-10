@@ -109,9 +109,7 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="products.html">PRODUCTS & SERVICES</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="shop.php">SHOP</a>
-            </li>
+          
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="gallery.html">GALLERY</a>
             </li>
@@ -156,37 +154,7 @@
      <section id="contact1">
     <div class="modal-body row">
         
-       <div class="col-md-6"  >
-          <!-- Start of modified code. Tutorial from:
-         https://github.com/IceTimux/SMTP-Bootstrap-Contact-Form-->
-
-      <div class="contactform">
-  	<div class="panel panel-default">
-  		<div class="panel-heading">
-    	</div>
-    	<div class="panel-body">
-    	<form name="form1" id="form1" action="" method="post">
-    			<fieldset>
-    			  <input type="text" class="form-control" name="fullname" placeholder="Full Name" />
-    			  <br />
-    			  <input type="text" class="form-control" name="subject" placeholder="Subject" />
-    			  <br />
-    			  <input type="text" class="form-control" name="phone" placeholder="Phone" />
-    			  <br />
-    			  <input type="email" class="form-control" name="emailid" placeholder="Email" />
-    			  <br />
-    			  <textarea rows="4" class="form-control" cols="20" name="comments" placeholder="Comments"></textarea>
-    			  <br />
-    			  <input type="submit" class="btn btn-dark"name="submit" value="Send Message" />
-    			</fieldset>
-    	</form>
-    	<p><?php if(!empty($message)) echo $message; ?></p>
-    	</div>
-	</div>
-	</div>
-       <!-- End of modified code.-->
-      </div>
-      
+  
       <div class="col-md-6"  align="right" >
     
         <!-- This is where I learned how to round the borders of images:
@@ -201,7 +169,19 @@
     
         </div>
       
-      
+      <div class="col-md-6" style="padding-left:8%;">
+  
+         <!--<div class="col-lg-8 mx-auto">-->
+            <h1>Contact us</h1>
+            
+            <p class= "lead">Interiors Mobles de Cuina<br>
+            46740, Carcaixent<br>
+            Valencia, SPAIN<br>
+            Tel: +34 626006246 / +34 962434779 <br>
+            interiors.carcaixent@gmail.com
+            
+            </p>
+          </div>
       </div>
       
       
